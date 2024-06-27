@@ -9,558 +9,1055 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/animate.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="assets/css/swiper.min.css" />
 </head>
+
 <body>
-   <!-- ======= Header ======= -->
-<header id="header">
-  <div class="container">
-    <input type="checkbox" name="check" id="check">
-    <div class="logo-container">
-      <svg xmlns="http://www.w3.org/2000/svg" width="116" height="23" viewBox="0 0 116 23" fill="none">
-        <path d="M30.2305 0.463379H37.7533C38.6626 5.50485 39.5719 10.5664 40.485 15.6239C41.2339 10.5102 44.5349 6.92064 46.9304 2.85778C47.7519 1.46606 49.1273 0.659905 50.6861 0.547604C52.4283 0.419261 54.1858 0.519529 56.1037 0.519529C55.6835 1.21739 55.3167 1.85109 54.927 2.46473C51.2936 8.15995 47.6602 13.8552 44.0229 19.5424C42.4679 21.9769 38.4563 23.0116 36.0111 21.5477C35.545 21.267 35.0483 20.7135 34.9184 20.1921C33.3252 13.6586 31.7969 7.10914 30.2305 0.463379Z" fill="white" style="fill:white;fill-opacity:1;"/>
-        <path d="M20.4618 13.8632C20.6375 12.0062 20.8285 10.2736 20.9546 8.53697C21.0463 7.32172 20.4618 6.62386 19.2888 6.6038C15.1205 6.51958 10.9484 6.45541 6.77627 6.40327C4.93091 6.3792 3.08172 6.40327 1.24018 6.40327C1.05679 2.69736 3.09319 0.282911 6.51647 0.254836C11.9609 0.206708 17.4053 0.214729 22.8496 0.254836C25.8603 0.278901 27.5758 2.17998 27.4459 5.31636C27.3809 6.88054 27.2434 8.45275 26.9874 9.99687C26.5671 12.5357 25.7724 13.3137 23.354 13.6827C22.3797 13.8311 21.3825 13.8151 20.4541 13.8712L20.4618 13.8632Z" fill="white" style="fill:white;fill-opacity:1;"/>
-        <path d="M7.0351 8.16026C6.84025 9.80064 6.58809 11.2445 6.51168 12.7004C6.3856 15.0667 6.76384 15.5199 8.98362 15.548C13.5607 15.6082 18.1417 15.5881 22.7188 15.5961C23.8879 15.5961 25.057 15.5961 26.2261 15.5961C26.2681 19.6831 24.2929 21.8168 20.5372 21.8168C15.2762 21.8208 10.0152 21.8248 4.75037 21.8168C1.57161 21.8127 -0.14003 19.9879 0.00897487 16.6469C0.0853874 14.9424 0.253495 13.2258 0.547683 11.5493C0.891539 9.59209 1.904 8.68165 3.77229 8.42898C4.83442 8.28459 5.91184 8.24449 7.02746 8.15625L7.0351 8.16026Z" fill="white" style="fill:white;fill-opacity:1;"/>
-        <path d="M96.7939 0.539509C96.4538 2.27615 96.1138 3.99274 95.7394 5.89783C94.8912 5.89783 94.0392 5.8858 93.191 5.89783C89.9129 5.94997 88.2089 7.22538 87.3951 10.5663C86.566 13.9714 85.9509 17.4367 85.183 20.8618C85.0989 21.2308 84.629 21.7682 84.3272 21.7803C82.1112 21.8605 79.8952 21.8244 77.5188 21.8244C78.1377 18.7241 78.7223 15.7602 79.3221 12.8003C79.624 11.3123 79.9182 9.82432 80.2735 8.34838C81.5037 3.24273 83.5974 1.14513 88.5795 0.595659C91.2578 0.298866 93.9933 0.54352 96.7939 0.54352V0.539509Z" fill="white" style="fill:white;fill-opacity:1;"/>
-        <path d="M96.1287 13.6347H92.7168C92.5449 11.1762 92.6977 10.9957 94.8411 10.9957C98.826 10.9957 102.811 10.9957 106.949 10.9957C107.289 13.4944 107.621 15.9449 107.954 18.3955C108.057 18.4155 108.16 18.4396 108.267 18.4596C109.1 16.9075 110.047 15.4075 110.743 13.7872C111.74 11.481 113.318 10.5946 115.797 11.124C115.48 11.6976 115.186 12.2591 114.865 12.8005C113.432 15.227 112.076 17.7056 110.513 20.0359C109.971 20.842 108.997 21.584 108.095 21.8206C106.349 22.2778 105.604 21.6201 105.237 19.7591C104.725 17.1602 104.255 14.5532 103.686 11.5412C103.407 12.4676 103.246 13.0011 103.044 13.6708H97.3436C99.2081 14.8741 99.2157 14.8741 98.7687 17.0719C98.4478 18.6441 98.1039 20.2083 97.7639 21.7885H94.5202C95.0474 19.1174 95.5632 16.5024 96.1287 13.6388V13.6347Z" fill="white" style="fill:white;fill-opacity:1;"/>
-        <path d="M59.5964 13.6025C62.1562 15.3191 64.7848 16.2696 67.528 16.4421C70.6876 16.4421 73.4003 16.3739 76.3345 16.3739C76.5103 19.6587 74.7184 21.8004 71.7651 21.8285C68.1393 21.8646 64.5135 21.8966 60.8877 21.7924C56.3297 21.66 54.3124 19.2817 54.5417 14.5089C54.5722 13.8431 54.5761 13.1613 54.7327 12.5236C55.3325 10.045 55.8521 7.53426 56.6583 5.12783C57.537 2.50482 59.4741 0.764171 62.1065 0.587699C65.8851 0.335024 69.7134 0.218713 73.4767 0.575667C76.8885 0.900535 78.2487 2.95803 78.0767 6.55966C78.0118 7.96341 77.7252 9.38722 77.3355 10.7388C76.7739 12.684 75.4481 13.6346 73.45 13.6105C69.3275 13.5664 65.2012 13.5985 61.0788 13.5985C60.6509 13.5985 60.2268 13.5985 59.6002 13.5985L59.5964 13.6025ZM63.4514 8.64523C65.3884 8.64523 67.2873 8.72144 69.1708 8.58908C69.6217 8.557 70.2139 7.89122 70.3896 7.38186C70.5042 7.05298 70.0878 6.21875 69.7287 6.06233C68.0858 5.3404 66.3627 5.32035 64.7313 6.10645C63.8143 6.55164 63.3864 7.44202 63.4514 8.64924V8.64523Z" fill="white" style="fill:white;fill-opacity:1;"/>
-      </svg>
-    </div>
-
-    <div class="nav-btn">
-      <div class="nav-links">
-        <ul>
-          <li class="nav-link" style="--i: .6s">
-            <a href="#">Ambientes</a>
-          </li>
-          <li class="nav-link" style="--i: .85s">
-            <a href="#">Anunciantes</a>
-          </li>
-          <li class="nav-link" style="--i: 1.35s">
-            <a href="#">Conteúdo</a>
-          </li>
-          <li class="nav-link" style="--i: 1.1s">
-            <a href="#">Recursos<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"><path fill="currentColor" d="m15 8l-4.03 6L7 8z"/></svg></a>
-            <div class="dropdown">
-              <ul>
-                <li class="dropdown-link">
-                  <a href="#">About US</a>
-                </li>
-                <li class="dropdown-link">
-                  <a href="#">Blog</a>
-                </li>
-                <li class="dropdown-link">
-                  <a href="#">Cases Studies</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+      <input type="checkbox" name="check" id="check">
+      <div class="logo-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="116" height="23" viewBox="0 0 116 23" fill="none">
+          <path
+            d="M30.2305 0.463379H37.7533C38.6626 5.50485 39.5719 10.5664 40.485 15.6239C41.2339 10.5102 44.5349 6.92064 46.9304 2.85778C47.7519 1.46606 49.1273 0.659905 50.6861 0.547604C52.4283 0.419261 54.1858 0.519529 56.1037 0.519529C55.6835 1.21739 55.3167 1.85109 54.927 2.46473C51.2936 8.15995 47.6602 13.8552 44.0229 19.5424C42.4679 21.9769 38.4563 23.0116 36.0111 21.5477C35.545 21.267 35.0483 20.7135 34.9184 20.1921C33.3252 13.6586 31.7969 7.10914 30.2305 0.463379Z"
+            fill="white" style="fill:white;fill-opacity:1;" />
+          <path
+            d="M20.4618 13.8632C20.6375 12.0062 20.8285 10.2736 20.9546 8.53697C21.0463 7.32172 20.4618 6.62386 19.2888 6.6038C15.1205 6.51958 10.9484 6.45541 6.77627 6.40327C4.93091 6.3792 3.08172 6.40327 1.24018 6.40327C1.05679 2.69736 3.09319 0.282911 6.51647 0.254836C11.9609 0.206708 17.4053 0.214729 22.8496 0.254836C25.8603 0.278901 27.5758 2.17998 27.4459 5.31636C27.3809 6.88054 27.2434 8.45275 26.9874 9.99687C26.5671 12.5357 25.7724 13.3137 23.354 13.6827C22.3797 13.8311 21.3825 13.8151 20.4541 13.8712L20.4618 13.8632Z"
+            fill="white" style="fill:white;fill-opacity:1;" />
+          <path
+            d="M7.0351 8.16026C6.84025 9.80064 6.58809 11.2445 6.51168 12.7004C6.3856 15.0667 6.76384 15.5199 8.98362 15.548C13.5607 15.6082 18.1417 15.5881 22.7188 15.5961C23.8879 15.5961 25.057 15.5961 26.2261 15.5961C26.2681 19.6831 24.2929 21.8168 20.5372 21.8168C15.2762 21.8208 10.0152 21.8248 4.75037 21.8168C1.57161 21.8127 -0.14003 19.9879 0.00897487 16.6469C0.0853874 14.9424 0.253495 13.2258 0.547683 11.5493C0.891539 9.59209 1.904 8.68165 3.77229 8.42898C4.83442 8.28459 5.91184 8.24449 7.02746 8.15625L7.0351 8.16026Z"
+            fill="white" style="fill:white;fill-opacity:1;" />
+          <path
+            d="M96.7939 0.539509C96.4538 2.27615 96.1138 3.99274 95.7394 5.89783C94.8912 5.89783 94.0392 5.8858 93.191 5.89783C89.9129 5.94997 88.2089 7.22538 87.3951 10.5663C86.566 13.9714 85.9509 17.4367 85.183 20.8618C85.0989 21.2308 84.629 21.7682 84.3272 21.7803C82.1112 21.8605 79.8952 21.8244 77.5188 21.8244C78.1377 18.7241 78.7223 15.7602 79.3221 12.8003C79.624 11.3123 79.9182 9.82432 80.2735 8.34838C81.5037 3.24273 83.5974 1.14513 88.5795 0.595659C91.2578 0.298866 93.9933 0.54352 96.7939 0.54352V0.539509Z"
+            fill="white" style="fill:white;fill-opacity:1;" />
+          <path
+            d="M96.1287 13.6347H92.7168C92.5449 11.1762 92.6977 10.9957 94.8411 10.9957C98.826 10.9957 102.811 10.9957 106.949 10.9957C107.289 13.4944 107.621 15.9449 107.954 18.3955C108.057 18.4155 108.16 18.4396 108.267 18.4596C109.1 16.9075 110.047 15.4075 110.743 13.7872C111.74 11.481 113.318 10.5946 115.797 11.124C115.48 11.6976 115.186 12.2591 114.865 12.8005C113.432 15.227 112.076 17.7056 110.513 20.0359C109.971 20.842 108.997 21.584 108.095 21.8206C106.349 22.2778 105.604 21.6201 105.237 19.7591C104.725 17.1602 104.255 14.5532 103.686 11.5412C103.407 12.4676 103.246 13.0011 103.044 13.6708H97.3436C99.2081 14.8741 99.2157 14.8741 98.7687 17.0719C98.4478 18.6441 98.1039 20.2083 97.7639 21.7885H94.5202C95.0474 19.1174 95.5632 16.5024 96.1287 13.6388V13.6347Z"
+            fill="white" style="fill:white;fill-opacity:1;" />
+          <path
+            d="M59.5964 13.6025C62.1562 15.3191 64.7848 16.2696 67.528 16.4421C70.6876 16.4421 73.4003 16.3739 76.3345 16.3739C76.5103 19.6587 74.7184 21.8004 71.7651 21.8285C68.1393 21.8646 64.5135 21.8966 60.8877 21.7924C56.3297 21.66 54.3124 19.2817 54.5417 14.5089C54.5722 13.8431 54.5761 13.1613 54.7327 12.5236C55.3325 10.045 55.8521 7.53426 56.6583 5.12783C57.537 2.50482 59.4741 0.764171 62.1065 0.587699C65.8851 0.335024 69.7134 0.218713 73.4767 0.575667C76.8885 0.900535 78.2487 2.95803 78.0767 6.55966C78.0118 7.96341 77.7252 9.38722 77.3355 10.7388C76.7739 12.684 75.4481 13.6346 73.45 13.6105C69.3275 13.5664 65.2012 13.5985 61.0788 13.5985C60.6509 13.5985 60.2268 13.5985 59.6002 13.5985L59.5964 13.6025ZM63.4514 8.64523C65.3884 8.64523 67.2873 8.72144 69.1708 8.58908C69.6217 8.557 70.2139 7.89122 70.3896 7.38186C70.5042 7.05298 70.0878 6.21875 69.7287 6.06233C68.0858 5.3404 66.3627 5.32035 64.7313 6.10645C63.8143 6.55164 63.3864 7.44202 63.4514 8.64924V8.64523Z"
+            fill="white" style="fill:white;fill-opacity:1;" />
+        </svg>
       </div>
-      <div class="log-sign" style="--i: 1.8s">
-        <a href="#contact" class="btn transparent" onclick="event.preventDefault(); scrollToTarget('contact');"><button class="contact-button">Solicitar Player Gratuito<svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24"><path fill="#fff" d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1a1 1 0 0 0 1-1Z"/></svg></button>
+
+      <div class="nav-btn">
+        <div class="nav-links">
+          <ul>
+            <li class="nav-link" style="--i: .6s">
+              <a href="#">Venues</a>
+            </li>
+            <li class="nav-link" style="--i: .85s">
+              <a href="#">Advertisers</a>
+            </li>
+            <li class="nav-link" style="--i: 1.35s">
+              <a href="#">Channels</a>
+            </li>
+            <li class="nav-link" style="--i: 1.1s">
+              <a href="#">Resourcers<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                  viewBox="0 0 20 20">
+                  <path fill="currentColor" d="m15 8l-4.03 6L7 8z" />
+                </svg></a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="#">About US</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">Blog</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#">Cases Studies</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="log-sign" style="--i: 1.8s">
+          <a href="#contact" class="btn transparent"
+            onclick="event.preventDefault(); scrollToTarget('contact');"><button class="contact-button">Get Your Free
+              Player <svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
+                  fill="white" />
+              </svg>
+            </button>
           </a>
-        <a href="#" class="btn solid"><button class="login-button">LogIn</button></a>
+          <a href="#" class="btn solid"><button class="login-button">Login</button></a>
+        </div>
+      </div>
+
+      <div class="hamburger-menu-container">
+        <div class="hamburger-menu">
+          <div></div>
+        </div>
       </div>
     </div>
+  </header>
 
-    <div class="hamburger-menu-container">
-      <div class="hamburger-menu">
-        <div></div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- End Header -->
-<div class="wrapper">
-  <div class="container">
-    <!-- ======= Title ======= -->
-     <div class="title">
+  <!-- End Header -->
+  <div class="wrapper">
+    <div class="container">
+      <!-- ======= Title ======= -->
+      <div class="title wow fadeInUp" data-wow-delay="0.1s">
         <h1>Monetize Your Screens,</h1>
         <span>Engage Your Customers</span>
         <div class="title-under">
-          <p>Transform your business's TV into an exciting experience for your customers and boost your revenue with channels featuring viral entertainment, sports, lifestyle, kids' content, and more.</p>
+          <p>Transform your business's TV into an exciting experience for your customers and boost your revenue with
+            channels featuring viral entertainment, sports, lifestyle, kids' content, and more.</p>
         </div>
-     </div>
-    <!-- End Title -->
-     <!-- ======= Section 1 ======= -->
-     <div class="section-1">
+      </div>
+      <!-- End Title -->
+      <!-- ======= Section 1 ======= -->
+      <div class="section-1">
         <!-- <img src="assets/image/section-1.png" width="100%"></img> -->
-         <div class="section-1-title">
+        <div class="section-1-title wow fadeInUp" data-wow-delay="0.3s">
           <img src="assets/image/section-1-back.png" width="100%" height="470px"></img>
           <img src="assets/image/section-1-top.png" width="70%" height="460px"></img>
           <img src="assets/image/section-1-logo.png" width="15%"></img>
-         </div>
-        <div class="card-group">
-          <div class="card">
-             <img src="https://s3-alpha-sig.figma.com/img/0b32/43f8/ae4033f646df5a70ca008592ec90f59e?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RJWqyT0L-nPwXdi8zwPigePzza6KPfWwavhzy6YfgtkLUXy71snGf-ALY6ifhFXsdfbLbtFz7A-1uSvKKZeNYz~BFGBNZ8n35FwUpYq7G97ElWjHtJ~IrMMkWbs9WmfpJsyfJwZEgwgO2cI7iHT5JGAlU0x9YyQu6rlS0lo42g-pa~qkeC1D~LD~O--Qugj-EfZ80e1A9oLdAp3h1x13a~32rVrAqSZ7Rt5~IYRFw1-7mlU-kcyTLoZ7xBnRzU59payIjBc6wpzdQldH-Y8pXXOi0yFnoptfDJxv8j6PsQTrgmyNxXQGJQPQrzPfNYut8w6tIoN9LljpLpt1-fKqTw__"  width="100%" height="100%"></img>
-             <div class="card-text">
-                <div class="card-title">More Revenue</div>
-                <div class="card-content">Use your TVs to advertise key products and promotions, driving higher average sales and revenue</div>
-             </div>
+          <video width="" height="" loop autoplay muted>
+            <source src="assets/image/cover-bg.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="card-group more-card-group">
+          <div class="card wow fadeInUp">
+            <img src="assets/image/more-revenue.png" width="100%" height="100%"></img>
+            <div class="card-text">
+              <div class="card-title">More Revenue</div>
+              <div class="card-content">Use your TVs to advertise key products and promotions, driving higher average
+                sales and revenue</div>
+            </div>
           </div>
-          <div class="card">
-            <img src="https://s3-alpha-sig.figma.com/img/8ae2/2088/ccd2aaf068965b461888bcd6ceaf625d?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NRYLYcoAGJKQUo5R2QKR4AxKqqPqRzItpTMjpI9LGfpUmLn0tZof9OXD6FcIeOBiJMsHLD8n20UdPOcNGez1yJgiGvo~XTQckdYi7dFzrrCdztlHEqQxgnI3TdbErozSp8M8UbdWZ-pkn1GmG7s5oVzcXC7NFqsJPCBPNhxeSRiLp6BaRo7BYIrrTCH2Lqcg~3agADxanTuhosbFqdiSQrq-uC3Sa2Jgn9v-hcUkYiI2uQdERmU5Jq5db144FscoVGDCiSEysTtRlmGoMj6JRuOCumgbpv1ShFufbH4LzNQSW~3g5gw44GueRthX318qrRn1vvopjPKu56Hui6bAVg__"  width="100%" height="100%"></img>
+          <div class="card wow fadeInUp">
+            <img src="assets/image/more-control.png" width="100%" height="100%"></img>
             <div class="card-text">
               <div class="card-title">More Control</div>
-              <div class="card-content">Automate your TVs and signage to make announcements and updates from anywhere, reducing effort.</div>
-           </div>
+              <div class="card-content">Automate your TVs and signage to make announcements and updates from anywhere,
+                reducing effort.</div>
+            </div>
           </div>
-          <div class="card">
-            <img src="https://s3-alpha-sig.figma.com/img/6884/4c67/1eab9b40b4534d9fe18ffb306e5ffe33?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W8tY0U3AtyUu3BGiD2i8Ls55mg8nnQ~OaMjBGYZi959kfP1yZM1cy8f4AQykSssoshJENrGE46vpBHkm-wEtceMgRKI8SFJrItlZlX9DVx53MwvikoGrCukUZ9br~Xffkoo2CWXB22O4W~slcOgtqKGP8uGNDlsuCYI-neaV5qyNr7Lkz0qB6LGm9X5anj-3hLqIoRPITl5YBV1KQDaI~QAXucuPo9-3Dw6YiauNMqKSAgX~L9OTXyOQTKfGWflBbJTkzc63q5-r06Fz9j2ZybgW7-2bMBG4NHM~3YhNe4TU6BWsqesa2tJRj7ccl6ex4LVa-Jm5SFRan8iXqkVWEg__"  width="100%" height="100%"></img>
+          <div class="card wow fadeInUp">
+            <img src="assets/image/less-competiers.png" width="100%" height="100%"></img>
             <div class="card-text">
               <div class="card-title">Less Competitors</div>
-              <div class="card-content">Choose the commercials that air on your TVs, blocking competitor ads and keeping the content appropriate.</div>
-           </div>
+              <div class="card-content">Choose the commercials that air on your TVs, blocking competitor ads and keeping
+                the content appropriate.</div>
+            </div>
           </div>
         </div>
-    </div>
+      </div>
       <!-- End Section 1 -->
-     <!-- ======= Section 2 ======= -->
-      <div class="section-2" id="section-2">
+      <!-- ======= Section 2 ======= -->
+      <div class="section-2 channel-sec" id="section-2">
         <div class="d-inline">
-          <p>Our Channels</p>
+          <p class="wow fadeInUp channel-sec-title">Our Channels</p>
           <div class="channels-group justify-center">
-              <img src="https://www.figma.com/file/ImP7ZSq7wTO4pvA4l6XlnL/image/aa9642409cf3ef6e853a65560618af6b3f90626c"></img>
-              <img src="https://s3-alpha-sig.figma.com/img/ccf0/b6f3/bed36c6a151bc5d7071b3044778961d1?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PvyCj7~Ce~9FA0csUeMwZ8ZdqeseJM-yKCkl~sfRHPX-6my4MllZJPVmokEjao4jQN8zPQu~C4RT6ilznTe-Pt-FYlgkRkkNGKU28DidPfCnDCZtejs7Osinp0zxVpCy5xvttrv6M-yvb3cl7HNYTZkKiswBJOyYH8LdiEJca5FB2Ghg4m9yURSkoXfVt73BAxqVz5iRsbjER9joGQXyj2KQL9aL5X0uRfwWc4ejKAg1eGvo~dME9Y6KxHOAxkQsTFhOz-vF7KjmTZbTWIJYnCNgzTL-DqoVuR0Qzc-NTpxsOf~7rz4s08P979rRlXs3bFhVbxnHa2-TOMmJWaYZ9A__"></img>
-              <img src="https://s3-alpha-sig.figma.com/img/5fe0/2621/b794becafa5bfe6b3ec93c9c74971fa5?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l5C9P36Tiuo1kXm9FxdEj2~~IeHrs-QMqPVJbh3CNAwvseq9CgQ4J-Jhl6LKIyyljggMFQxBLdUj51sjyjRniQSFNakiEub6G63~-OawkF6wk8A8mGWQgpP6Dj~yVQif6d5WOrzvpbU8zwlGQhoJ3uboVUf~rbwZfdh1qQNW-6adtxtFbKeIDH8n0zDHFduvLeiy~Xnn3BQE7z725whgXCGzW~Uk~qiGoIaHE7IDlvyIebcEqJNl9NsRtPDG9BY2EqG-jT2L1WDeCWJb2diJ-FfWIZ6or7VOMnA3~f-elg9srRQdP7sipXbX876HjiLB5drdPxs521hgTHG~oBUqXw__"></img>
-              <img src="https://s3-alpha-sig.figma.com/img/3710/445f/ef8de175db2521c42a307c2abc66737c?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mOWhfdbO4SyJWG5aOKH3VIlfmXn0eq8URJKn50mlEqMSo1lGWE63zofmWVLrglNXkKQE2kNd5wgB7xkW2SHfj7bjjsmxoqUzQNExC41W4xSnljZx04-6XMXGTt9M8yF0NM6LiLe8CTlUqd36OI3RMSbKydLU4-WzHEqVsiRCDo1l5S6UNiCAx4VzTKeESLiHS8SGRq-AXUK-LNaG9Pq2WKw5V-mM612Zg8t6VFw1nOvcxhChFTx46uNk4hnSyLrTQI4KrRpUlvR6M26hWzcQvbrmprJ683eKWmOHGDZXoDftZ~Rt7wvhSkdghLJ8F4XcYAWi-NySHHBCez~n9mkFcg__"></img>
-              <img src="https://s3-alpha-sig.figma.com/img/45b8/d203/c3fe26d56637c9d7224d3890f258d8a0?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e6rV24qAcGTHudzhEYxeDnyKYRnJNofPktTdG2KbKELjhnnaJIhzkfdQmp5lBNgikvm5I6X~HBAD-DQu-RdPytXxbAN3xLXxwNAAOUItMg6CUsl6QBBSYc5QRQrrp0WrqPB3FKB6ENt3Zv~N91HWXLVjWVx~JDJSugGntRRl4ngGgDCcYo5MEHZCXBwFiCX0TIxbL4yYK9dW~tsR2nkR1sqY1k9gKzOyUzQ2BImIuyD-bB1ZcLCJCM3EmU95YBtaHfPDQmiwA8o1UeuugzPI3vEl7Sydho8vopfEgn2dpSv2pLQWGC1qx8uYJzeYMsJyiPP02zFpxdZdG-NPA4ZXsg__"></img>
+            <img class="wow fadeInUp" src="assets/image/happy.png"></img>
+            <img class="wow fadeInUp" src="assets/image/notro.png"></img>
+            <img class="wow fadeInUp" src="assets/image/love.png"></img>
+            <img class="wow fadeInUp" src="assets//image/paws.png"></img>
+            <img class="wow fadeInUp" src="assets/image/brunch.png"></img>
 
           </div>
         </div>
-        <div class="d-inline">
-            <div class="section-2-card">
-              <div class="section-2-card-left">
-                <span></span>
-                  <img src="https://s3-alpha-sig.figma.com/img/8d92/037e/85617b05069b29f55d8eeb6fe7c3de53?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MApYGlmwaZVGPUA-xuEJgExiWXeU46ft1RJHgq2Gh-~AXGsvSRpqQrPtH4If2Q7obKU0yjTcyk-MfCxs3bMIFZgRPZ4weKcwZnnhuBCxTkFEqMEXFIdf3cLrAIpiGWDemgihSYd10MvnZ6fn2abrsaXGmkWlYTisGwBBo3BIZvv6aLAUUaGYiV3baJG2Lf6n7sZSlifOZAMpQ0CPHZKBC8kQRrdw3~6khwXUB~Yj8FIOuoQeanJpQZnhW9uS45NWOelP~zxEMKG~JOYYaesAVDpR224pe01mEYsifA1ZZaWRRUeUC7uymnfdGAwQOI8eKfF5dRDfurzz1pESeVmzYw__"></img>
-                  <img src="assets/image/section-2-left.png" width="170" height="145"></img>
-              </div>
-              <div class="section-2-card-right">
-                <span>
-                  <h1>Entertainment Made For You</h1>
-                  <p>No more wasting time searching for content. With our curated or custom playlists, your business always has the right content o match your business’s vibe.</p>
-                  <button>Learn More</button>
-                </span>
-              </div>
+        <div class="d-inline for-desk">
+          <div class="section-2-card">
+            <div class="section-2-card-left wow fadeInUp">
+              <span></span>
+              <img src="assets/image/for-you.png" alt=""></img>
+              <img src="assets/image/section-2-left.png" width="170" height="145"></img>
             </div>
-            <div class="section-2-card">
-              <div class="section-2-2-card-left">
-                <span>
-                  <h1>Monetize your Screens</h1>
-                  <p>Engage your audience and generate income with ads. Receive monthly payments for ads displayed in your venue, turning screens into profit centers.</p>
-                  <button>Learn More</button>
-                </span>
-              </div>
-              <div class="section-2-2-card-right">
-                <span></span>
-                  <img src="https://s3-alpha-sig.figma.com/img/d599/6f16/5d2a21672cabfc0040b562881b8bb91a?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lGblHOY~wuqSzs7dBbHzujAQImDI86Er8TKC6pgNa8iZQg0bYR9rIv1ApO0GZsmoVoD-MUYWkM7ju8mTUllAFE550Bi9qrQoE0oYo9~o1sMDf9MSHFu9EJv8oPJlq24uHIx~VZMHPIbFyNuz-ShRfs8c4nqcJwykrWrIYVzp15Rsl7hIhe0JB4KUGH8JQeVAM-JzPYZPeE4oFsGzR5Zww7G3k-HBxuJKZDwxNNR0vcXX4WUV7VJ-3M9FIk9o~XGxpgmBY2LstAnl45UvGFaH98BXsh8RJn8ZdzbBPMpPdvEh~fw6fgiu7MQI3JxXUUcUiFHy4cA9espWMip-X7vfZA__"></img>
-                  <img src="assets/image/section-2-right.png" width="170" height="145"></img>
-              </div>
-              
+            <div class="section-2-card-right wow fadeInUp">
+              <span>
+                <h1>Entertainment Made For You</h1>
+                <p>No more wasting time searching for content. With our curated or custom playlists, your business
+                  always has the right content o match your business’s vibe.</p>
+                <button>Learn More</button>
+              </span>
             </div>
+          </div>
+          <div class="section-2-card">
+            <div class="section-2-2-card-left wow fadeInUp">
+              <span>
+                <h1>Monetize your Screens</h1>
+                <p>Engage your audience and generate income with ads. Receive monthly payments for ads displayed in your
+                  venue, turning screens into profit centers.</p>
+                <button>Learn More</button>
+              </span>
+            </div>
+            <div class="section-2-2-card-right wow fadeInUp">
+              <span></span>
+              <img src="assets/image/monetize.png"></img>
+              <img src="assets/image/section-2-right.png" width="170" height="145"></img>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="for-mobile entertain-box-holder">
+          <div class="entertain-box">
+            <div class="entertain-text">
+              <h2>Entertainment Made For You</h2>
+              <p>No more wasting time searching for content. With our curated or custom playlists, your business always
+                has the right content o match your business’s vibe.</p>
+            </div>
+            <img src="assets/image/en1.png" alt="" />
+          </div>
+
+          <div class="entertain-box">
+            <div class="entertain-text">
+              <h2>Monetize your Screens</h2>
+              <p>No more wasting time searching for content. With our curated or custom playlists, your business always
+                has the right content o match your business’s vibe.</p>
+            </div>
+            <img src="assets/image/en2.png" alt="" />
+          </div>
         </div>
 
       </div>
       <!-- End Section 2 -->
-     <!-- ======= Section 3 ======= -->
+      <!-- ======= Section 3 ======= -->
       <div class="section-3">
-        <div class="section-3-title">
-          <h1>Over’s Entertainment Hub</h1>
-          <p>Our channels offer something for everyone, from interactive trivia to the latest viral videos, ensuring your customers stay entertained and engaged.</p>
+        <div class="section-3-title ">
+          <h1 class="wow fadeInUp">Over’s Entertainment Hub</h1>
+          <p class="wow fadeInUp">Our channels offer something for everyone, from interactive trivia to the latest viral
+            videos, ensuring
+            your customers stay entertained and engaged.</p>
         </div>
         <div class="section-3-card-group">
-          <div class="section-3-card">
+          <div class="section-3-card wow fadeInUp">
             <div class="section-3-card-title">
               <h1>Sports</h1>
               <p>53 Canais</p>
             </div>
             <div class="section-3-card-content">
-              <img src="https://s3-alpha-sig.figma.com/img/064c/36d0/c6b331428f7a45a570d3bec1a3a16b0c?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mKtIFtV5aEcZDhCDvADZ1x3K~rVodjdobJGZSRO0TumNV2xuMem0N-XktFf-z16bsGbdhLiIRGKOvi5-kvk2Lo3cwfVND72LapzuQFRk~sY8DL-G-GrO0SvRyK1XOkw0NQ15PbeiNUmnIaihyuGedooTVWD65pEhz7VZGrmGUzC9tJa8yif~lMysrIhgR54s2Lm0tm1Im-fKFK4hWwAxwEMBeuNso~f-VNJMBVh8a4wEZLYbxQg1KJHOrHVzQQhg7atFWmjygQM-CRSHeivdKSGeZoMACDCvHPPQmhv~ZeEkY2HZMdF51sAqKyFPOoi5aqDJ1Cnn76~JbqzBeAOFCg__"></img>
-              <img src="https://s3-alpha-sig.figma.com/img/8869/eb5c/58e74f81c9e1e6e417b50f12a95fb7e1?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a~VT6GIX~CFVbAUAg0wunl5wM04Dj-9OB1q1zIbG1T9winshApk8EcZr0i3SNl0K7JYsZew9TmSO2ZvxITGZEh7Fq3Kk4LJFWaoGwS-2-ZJlG0QmM~ENpO9bmMet~6BKMfCgjMhlg7Z-uQVYeXh2kEkqtlteYjM8C~4~IkhjVymGFCcq4K9irKCUNXYTVpFELGMonw7bCbsGbihCNxXVg70W7Hr52-xTTyycxFsU7GLJdNft2KpUQTD-p9jF95fR5rCHKLpTSnIMZRFWSr685dEYnBvY~gtraZ7hboZ0RgXLegJZ82at---PROGy~oQ4FaWC7vLOFl1ZpiDO7~8r-A__"></img>
-              <img src="https://s3-alpha-sig.figma.com/img/7a4a/6bc6/e48ddcf0d9ef537da8688d31906f3f3d?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XLwJp-ffCvYQgyhojX3fy9wVFt46fHetUadPdPMe3VRyoUBj5EEKeBrRzdrdBL-sYCaEj2~RhzCjJ7AZmrYi51IKRjS4-eQSViti~hDtofXB9YZZadamGchdOkJ6wBRzzLQTJi-HHd~pHycZoUtw22jpTp-52~6j~23pb70CE-PoQ56FOozBnBHgvoFkKb~-3OuWBCX4vqog1CKgGrT-EOQ7tZ09~aNl2QSB0-D1RpXUZnVLUyXNwXvDH7o6BHsArNQgM16ynJHJt7TpfA0nk~6-ogQAAtrzD3A2IV44a7aOehMhzY~b9g8u-FFKZITVX-AN9MaqG4l~anIBXouCGQ__"></img>
+              <img class="wow fadeInRight" data-wow-delay="0.4s" src="assets/image/sp-card1.png"></img>
+              <img class="wow fadeInRight" data-wow-delay="0.3s" src="assets/image/sp-card2.png"></img>
+              <img class="wow fadeInRight" data-wow-delay="0.2s" src="assets/image/sp-card3.png"></img>
             </div>
           </div>
-          <div class="section-3-card">
+          <div class="section-3-card wow fadeInUp">
             <div class="section-3-card-title">
               <h1>Viral</h1>
               <p>21 canais</p>
             </div>
             <div class="section-3-card-content">
-              <img src="https://s3-alpha-sig.figma.com/img/3b5a/3e70/b91a5f38bc264ae2583282601ba8601e?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RVACbu6hI6XMu7tquNNFKmftVlYJ2Q1ag0ikNSAi~r~SMddR1g~RFGEbeWZeeCT5Cihlvot7M9lXu6Y6D2DuAL9sptA3QC9xyiEi3Ku4ikMBTH91xlykOfgokJdaOIWVrPRrYW4GxZTFx2eQoWBQ8Dw~Fnpz7pIAYled63gsVyxppGs0wlUx6ZXh5QrIAptDsKrfnqj3nYhSI2kPNqQOWFKXUaDbONoueelN4~7hLqOy4vVNImUGnz15O7p5VSB9brd9oWT8LDwU6r8bZ5~7-IkYo1e~S7uOfuJl7VkgA4YqNE3tbTaJ73hRfdpQFKriTE7QFLpPlwnwlLPEszDJkg__"></img>
-              <img src="https://s3-alpha-sig.figma.com/img/dc8b/a319/2e9ab2b85dfcb6302177a64a271bf4e5?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ao6ImyCzOj7Nl3Sm2qw8gXbgbFo8AFcJCn8lcf3zsIaOXquafTOcz6B31OHF5XIR73v70PFWLbU-IShM7lhS5K1-fsVVm4DrkLfZG4gGKmSyI~3r05CmfVFzwRkbMoyQoFMSx37UbxQyRNgVymG2CTjxqGO2u8OXZYToaL2oGYAvyS5EpzzbLo~EnVOZLhbskqnSmYWJCSo8Y2nHe-hHAXodVeuxIypkUZ~ALOeElDtr0zsP-nVS58eRD4jF0xaosedeH0j-yE-U2YFhJ~Pl8SOkx0sxtAyoOwSMZOZNdl07MOZk9YqWmGkkqSMWrBb9XEdbkyaWZ4ZVrbWjUvGNkg__"></img>
-              <img src="https://s3-alpha-sig.figma.com/img/6009/2871/6f249123cfdbbf687ab82790f33af585?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RHnvulctsOhvbw11dhmstmuxuIXqFjTLfqmLMF6vEHhZTJBdwaryNFTx91grdhiVXAriE19AHLvJoeDZKKd1whVLWCQlj-BZSdsxlfiLMJp5U9A0YTyH92La49VPl~kLLAYS~1iPZe5rTifGXvlMuUezQc~jCGdit8F7QpRwQcnVo0uM5SImqRD4~pbAq-gFDj5cDaeujqT5ECb9Z1fOVDTWBDp6Gw0Tsgn0fQWR~f4roCJ19m8-ml3cmwcExwp1rrDtv2fsOIfkJgvvA6wDNKkfr87lxXmKehRGo4ysCr128PbhPDdRx1xo8k0Es-go69IXE~AIrILFOV~brVB6fA__"></img>
+              <img class="wow fadeInRight" data-wow-delay="0.4s" src="assets/image/v-card1.png"></img>
+              <img class="wow fadeInRight" data-wow-delay="0.3s" src="assets/image/v-card2.png"></img>
+              <img class="wow fadeInRight" data-wow-delay="0.2s" src="assets/image/v-card3.png"></img>
             </div>
           </div>
-          <div class="section-3-card">
+          <div class="section-3-card wow fadeInUp">
             <div class="section-3-card-title">
               <h1>Food</h1>
               <p>30 Canais</p>
             </div>
             <div class="section-3-card-content">
-              <img src="https://s3-alpha-sig.figma.com/img/b899/3031/ee8ed6bbc48913b48d4d67f651f3e8e6?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LaqLnU6~QGB1BqdiwQu2pvu8fQcq0Nk7PlIL5bj11egyunzFovgkJUnxpAQteJXxI-UVv97GTxHWYNuDFbMiI7X0UfeDqMUhFMSCA8fbaSf2bv10tAeU3BCq5e9OgJB2XbiURuNXJ3ZpXnbTZFDtIVIv8oxKY-JqPYyNo5-YgrBCXiz-0XJ0EE~jPLsCGzvu7ZNvw0BU4jDUvn14nerkGN2x1mEM1qnHcldoAXXgcyy065Gz0hwalKu6VDcpQieQM09a6ukz2jXPFBVFU-yja0fsAbkz0tME3rbSWDCbY~tZbyJeXeGx8RhpXK--66EteGCZo-TxFVmm7-3N8s3paQ__"></img>
-              <img src="https://s3-alpha-sig.figma.com/img/ac9a/b38d/ec9c569ee833f3429806e74ff97c942f?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qm6pmaiX92DFHo4TpEu4iBwQWzas~knvrqHbtFmDzitOKU1PVlwgIAfCi43LJBDy0l-y2yZKUv8rfZXCyheUk1Z5LOb~NNjPgYBbevWZuiLaah0CLglj2fPGu2MmGT3BgPr1FT23nix3SpPD7akTHg1mskmc6~lj4jhaaSqfJvoT83WH1MYxij31YV~m1PjyWUSZCdjXEYoYLjMOBYfVMVtw1sRTucxO~sehREBJfl6FBE1d7wdeijoMLCc-NGEdvua6DEukvSSv~RVL~W7HzUsP9lXOnEJhE55swgZsaqg1O~C1LJ5DmZbV7TvyLapWbCqTMlg9WLFVzQw~~H~xKg__"></img>
-              <img src="https://s3-alpha-sig.figma.com/img/12f0/d882/5aa49c13c213ac3ca181353b8d459ec5?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=buhNEpNmbQ7M-xxkgv2ZHGvsL1yZL0zifYJwIwhlUVJWutlgpjeNpv2~tYYcPkpHopRYRu~aVV85pl5MdShs-fX9qQLR-L8XvGfN~vZmRHFnMTnpiexp1cQMH10pa2jBy~~iX85c6FKXmhyG1jN0wa4juY2FQTuoSLxHTlletynwwOazic8Oh8rbdJn3lKHDUfWsuJTCViKFIaBe3EWCuy1QbDZeMWBHSBcJar7XM-o6AgPAtwoya98eNBXkFrIWb0geo54032TiHPspxjvGF5nKg9Xb96Xahx6giG6EBYBOEXDn3wEu4b4cZ-hCI8Z9eiac8NQStlXX1fl9XkRM0A__"></img>
+              <img class="wow fadeInRight" data-wow-delay="0.2s" src="assets/image/f-card3.png">
+              <img class="wow fadeInRight" data-wow-delay="0.4s" src="assets/image/f-card1.png"></img>
+              <img class="wow fadeInRight" data-wow-delay="0.3s" src="assets/image/f-card2.png"></img>
+
             </div>
           </div>
-          <div class="section-3-card">
+          <div class="section-3-card wow fadeInUp">
             <div class="section-3-card-title">
               <h1>Other</h1>
               <p>23 Canais</p>
             </div>
             <div class="section-3-card-content">
-              <img src="https://s3-alpha-sig.figma.com/img/5e72/ccfe/992a233a6fbbeb135194131b8069ec82?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a1ibfkC5bVh6lu5pyKOPyLU7bUOoq66m9u8n-s5nlIh2KZoIMM01Qt-liHIAgtLM~I-c9CFopHdamo145Rn4DkjCbkzY01dtt1ZGnMHf1W13J0Bd1o-pDmlTOL-HDTzjpnDGzf91E28CgPhk6BK4EGA04fTWZ387ecZ3AdbCIV~iiTfRY8AM-zi6k7j3aPRDg0Z4IsN9FJsZkg-YQ7B59TuDDTizgVA~BgjMTAGnzLey8YCUs7YDO6hHkaZCvQgeZHAoHaTG0eCP8B0tciySe-HJukiEEnop~BRrAsEmR433lLQbjvC3BTqMBgUp19oczSTKqRtWDI5J5I41UzHh-g__"></img>
-              <img src="https://s3-alpha-sig.figma.com/img/e6e3/0b86/09de5457f789d0e3a5c6ebbfd708a72d?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=foqcimcXjAtL6p8jtQ5UhaFxmKF6vDZVNMxWVTITV8iTTRBJHVivBLmrJkpbTQlZardtalmdfLgkaHcclpN2qoXUygKYTF9DBHmMCtQJeIGPSOfbte9fSYvXIN0SiwDofcygrtCEGaShPUKC5gWFWUH8hJy378T37BC22IRgKHR52i87yCHEyLY5J1XZc-xQFe0nMm0GqEsKJI~SQRojlSJYIBfhxB0Coxs-QnB4nLIWH-IVzAb9LZX5-b1m14qFCAoEHcO1yZpMYbuTu6Fj9xE5RM83kH6AKk8XPeeYtzFx6GUkNDgF9CKn2uO9jJB8hagwAiAfRyg5EbLisZzdHA__"></img>
-              <img src="https://s3-alpha-sig.figma.com/img/a002/a28b/14f415b18900ec1d304493ed4f135720?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WRuaPMdViyadi-nXUaRpRTJgM4e9uFSgbHLR47Bw~XxvUrgZGngZXrRj80u8B~PCVZm3GdGGmlushCsDTcfac9SgaumZz~lUPFhW~oBm2v3798QWdi7KjOeXDwsIgEtBw0tHaMU3aXB6XF3XAbc73UrtXlxAnTfMyORlk2O0Alob-5AW9BApJq9ODmdD~uzn~9tuSpHbigbLrcsEafQjgFaD-~Ka0oAgzYJJpV5awdPqJr8-x2Xgok6tlYMJLEjhTnavE~sLkNTQYKGlrnYf1VtSHl8LUEkQxScqx~xdXvf8AdCe2usBoqP6UPqsdFcjhHBwSzlM0Qp54YCUGN7aCA__"></img>
+              <img class="wow fadeInRight" data-wow-delay="0.2s" src="assets/image/o-card1.png">
+              <img class="wow fadeInRight" data-wow-delay="0.4s" src="assets/image/o-card2.png"></img>
+              <img class="wow fadeInRight" data-wow-delay="0.3s" src="assets/image/o-card3.png"></img>
             </div>
           </div>
-          
+
         </div>
       </div>
       <!-- End Section 3 -->
-     <!-- ======= Section 4 ======= -->
-     <div class="section-4" id="section-4">
-      <div class="section-4-title">
-        <button class="scale">Scale And Elevate Process</button>
-        <h1>Innovative, Efficient, and Perfect for Your Business</h1>
-        <p>With our platform, creating the perfect in-location experience is easier than ever, regardless of the number of venues.</p>
-      </div>
-      <div class="section-4-card-group">
-        <div class="section-4-card">
-          <div class="section-4-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" viewBox="0 0 48 48"><path fill="#fff" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M8.94 15.633h30.12M8.94 32.367v-8.201a3.605 3.605 0 0 1 7.21 0v8.2m15.7.001v-8.201a3.605 3.605 0 0 1 7.21 0v7.29m-18.665.911v-8.201a3.605 3.605 0 0 1 7.21 0v8.2"/><circle cx="38.5" cy="38.433" r="7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M39.529 38.433a2 2 0 1 1 0 4h-3.3v-8h3.3a2 2 0 1 1 0 4m0 0h-3.301"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M42.5 32.69V9.5c0-2.2-1.8-4-4-4h-29c-2.2 0-4 1.8-4 4v29c0 2.2 1.8 4 4 4h23.305"/></svg>
-          </div>
-          <h1>Made for Business</h1>
-          <p>Our service transforms typical TV programming into a business-friendly experience with viral videos that keep customers entertained.</p>
+      <!-- ======= Section 4 ======= -->
+      <div class="section-4" id="section-4">
+        <div class="section-4-title wow fadeInUp">
+          <button class="scale">Scale And Elevate Process</button>
+          <h1>Innovative, Efficient, and Perfect for Your Business</h1>
+          <p>With our platform, creating the perfect in-location experience is easier than ever, regardless of the
+            number of venues.</p>
         </div>
-        <div class="section-4-card">
-          <div class="section-4-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" viewBox="0 0 256 256"><path fill="currentColor" d="M216 76h-49.19a50.5 50.5 0 0 0 12.63-8A25.53 25.53 0 0 0 188 49.44A28.62 28.62 0 0 0 158.56 20A25.53 25.53 0 0 0 140 28.56c-5.91 6.67-9.63 15.36-12 23.69c-2.35-8.33-6.07-17-12-23.69A25.53 25.53 0 0 0 97.44 20A28.62 28.62 0 0 0 68 49.44A25.53 25.53 0 0 0 76.56 68a50.5 50.5 0 0 0 12.63 8H40a12 12 0 0 0-12 12v32a12 12 0 0 0 12 12h4v68a12 12 0 0 0 12 12h144a12 12 0 0 0 12-12v-68h4a12 12 0 0 0 12-12V88a12 12 0 0 0-12-12m-70-42.14A17.6 17.6 0 0 1 158.8 28h.61A20.62 20.62 0 0 1 180 49.2a17.6 17.6 0 0 1-5.86 12.8c-12.09 10.7-33.07 13.21-42 13.79c.62-8.86 3.12-29.79 13.86-41.93M76 49.2A20.62 20.62 0 0 1 96.59 28h.61a17.6 17.6 0 0 1 12.8 5.86c10.71 12.09 13.21 33.07 13.79 42c-8.89-.58-29.87-3.09-42-13.79A17.6 17.6 0 0 1 76 49.2M36 120V88a4 4 0 0 1 4-4h84v40H40a4 4 0 0 1-4-4m16 80v-68h72v72H56a4 4 0 0 1-4-4m152 0a4 4 0 0 1-4 4h-68v-72h72Zm16-80a4 4 0 0 1-4 4h-84V84h84a4 4 0 0 1 4 4Z"/></svg>
+        <div class="section-4-card-group">
+          <div class="section-4-card wow fadeInUp">
+            <div class="section-4-card-icon">
+              <svg width="111" height="112" viewBox="0 0 111 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_4607_4381" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                  width="111" height="112">
+                  <path d="M110.426 0.637573H0.0159912V111.048H110.426V0.637573Z" fill="white" />
+                </mask>
+                <g mask="url(#mask0_4607_4381)">
+                  <path
+                    d="M64.3421 96.826V73.6782C64.3421 71.2775 64.3421 70.0771 63.8749 69.1602C63.4639 68.3536 62.8081 67.6978 62.0016 67.2868C61.0846 66.8196 59.8842 66.8196 57.4835 66.8196H45.4809C43.0802 66.8196 41.8798 66.8196 40.9629 67.2868C40.1563 67.6978 39.5005 68.3536 39.0896 69.1602C38.6223 70.0771 38.6223 71.2775 38.6223 73.6782V96.826M12.9026 36.8132C12.9026 43.9156 18.6602 49.6731 25.7625 49.6731C32.8648 49.6731 38.6223 43.9156 38.6223 36.8132C38.6223 43.9156 44.3799 49.6731 51.4822 49.6731C58.5845 49.6731 64.3421 43.9156 64.3421 36.8132C64.3421 43.9156 70.0997 49.6731 77.202 49.6731C84.3043 49.6731 90.0618 43.9156 90.0618 36.8132M26.6198 96.826H76.3446C81.1461 96.826 83.5468 96.826 85.3808 95.8916C86.9939 95.0696 88.3055 93.7581 89.1274 92.1449C90.0618 90.311 90.0618 87.9103 90.0618 83.1088V33.3839C90.0618 28.5825 90.0618 26.1817 89.1274 24.3478C88.3055 22.7347 86.9939 21.4231 85.3808 20.6012C83.5468 19.6667 81.1461 19.6667 76.3446 19.6667H26.6198C21.8183 19.6667 19.4176 19.6667 17.5837 20.6012C15.9705 21.4231 14.659 22.7347 13.837 24.3478C12.9026 26.1817 12.9026 28.5825 12.9026 33.3839V83.1088C12.9026 87.9103 12.9026 90.311 13.837 92.1449C14.659 93.7581 15.9705 95.0696 17.5837 95.8916C19.4176 96.826 21.8183 96.826 26.6198 96.826Z"
+                    stroke="white" stroke-width="4.00827" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </svg>
+            </div>
+            <h1>Made for Business</h1>
+            <p>Our service transforms typical TV programming into a business-friendly experience with viral videos that
+              keep customers entertained.</p>
           </div>
-          <h1>Free Service</h1>
-          <p>No contracts or commitments. Experience our pre-set device installs quickly, ready to use in less than 5 minutes.</p>
-        </div>
-        <div class="section-4-card">
-          <div class="section-4-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="m14 19l3 3l5-5M4 6v6s0 3 7 3s7-3 7-3V6"/><path d="M11 3c7 0 7 3 7 3s0 3-7 3s-7-3-7-3s0-3 7-3m0 18c-7 0-7-3-7-3v-6"/></g></svg>
+          <div class="section-4-card wow fadeInUp">
+            <div class="section-4-card-icon">
+              <svg width="103" height="111" viewBox="0 0 103 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_6406_5316" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                  width="103" height="111">
+                  <path d="M102.402 0.454468H0.190674V110.865H102.402V0.454468Z" fill="white" />
+                </mask>
+                <g mask="url(#mask0_6406_5316)">
+                  <path
+                    d="M51.8569 34.5149V98.6473M51.8569 34.5149H37.6848C35.5966 34.5149 33.594 33.6703 32.1175 32.1669C30.6409 30.6635 29.8114 28.6245 29.8114 26.4984C29.8114 24.3722 30.6409 22.3332 32.1175 20.8298C33.594 19.3264 35.5966 18.4818 37.6848 18.4818C48.7075 18.4818 51.8569 34.5149 51.8569 34.5149ZM51.8569 34.5149H66.029C68.1172 34.5149 70.1198 33.6703 71.5963 32.1669C73.0729 30.6635 73.9024 28.6245 73.9024 26.4984C73.9024 24.3722 73.0729 22.3332 71.5963 20.8298C70.1198 19.3264 68.1172 18.4818 66.029 18.4818C55.0063 18.4818 51.8569 34.5149 51.8569 34.5149ZM83.9231 54.5563V85.8208C83.9231 90.3105 83.9231 92.5553 83.0493 94.2702C82.2808 95.7786 81.0544 97.005 79.546 97.7735C77.8311 98.6473 75.5863 98.6473 71.0966 98.6473L32.6172 98.6473C28.1275 98.6473 25.8827 98.6473 24.1678 97.7735C22.6594 97.005 21.433 95.7786 20.6645 94.2702C19.7907 92.5553 19.7907 90.3105 19.7907 85.8208V54.5563M11.7742 40.9281L11.7742 48.143C11.7742 50.3879 11.7742 51.5103 12.211 52.3677C12.5953 53.1219 13.2085 53.7351 13.9627 54.1194C14.8201 54.5563 15.9426 54.5563 18.1874 54.5563L85.5264 54.5563C87.7713 54.5563 88.8937 54.5563 89.7511 54.1194C90.5053 53.7351 91.1185 53.1219 91.5028 52.3677C91.9396 51.5103 91.9396 50.3879 91.9396 48.143V40.9281C91.9396 38.6833 91.9396 37.5609 91.5028 36.7035C91.1185 35.9493 90.5053 35.3361 89.7511 34.9518C88.8937 34.5149 87.7712 34.5149 85.5264 34.5149L18.1874 34.5149C15.9426 34.5149 14.8201 34.5149 13.9627 34.9518C13.2085 35.3361 12.5953 35.9493 12.211 36.7035C11.7742 37.5609 11.7742 38.6833 11.7742 40.9281Z"
+                    stroke="white" stroke-width="4.00827" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </svg>
+
+            </div>
+            <h1>Free Service</h1>
+            <p>No contracts or commitments. Experience our pre-set device installs quickly, ready to use in less than 5
+              minutes.</p>
           </div>
-          <h1>Easy to Use</h1>
-          <p>Automate your business promotions by having dedicated ad breaks, making it as simple as running a commercial. </p>
+          <div class="section-4-card wow fadeInUp">
+            <div class="section-4-card-icon">
+              <svg width="112" height="111" viewBox="0 0 112 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_6406_5329" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                  width="112" height="111">
+                  <path d="M111.159 0.454468H0.748535V110.865H111.159V0.454468Z" fill="white" />
+                </mask>
+                <g mask="url(#mask0_6406_5329)">
+                  <path
+                    d="M100.213 51.527V55.5834C100.207 65.0913 97.1283 74.3427 91.4354 81.9578C85.7426 89.573 77.7406 95.1439 68.6229 97.8397C59.5052 100.536 49.7603 100.212 40.8416 96.9169C31.923 93.6219 24.3083 87.5322 19.1334 79.556C13.9585 71.5797 11.5005 62.1444 12.1261 52.6571C12.7517 43.1699 16.4273 34.139 22.6048 26.9113C28.7822 19.6837 37.1306 14.6466 46.4047 12.5512C55.6788 10.4559 65.3818 11.4145 74.0666 15.2842M100.212 20.2854L56.1215 64.4204L42.8942 51.1931"
+                    stroke="#F9F9F9" stroke-width="4.00827" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </svg>
+            </div>
+            <h1>Easy to Use</h1>
+            <p>Automate your business promotions by having dedicated ad breaks, making it as simple as running a
+              commercial. </p>
+          </div>
+
         </div>
-       
+        <div class="section-4-slider">
+
+          <div class="swiper text-slider kenwheeler">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Total Control
+                  </p>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Increased Visibility
+                  </p>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Customizable Layouts
+                  </p>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Start up friendly
+                  </p>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Customer Engagement
+                  </p>
+                </span>
+              </div>
+              <!-- duplicates -->
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Total Control
+                  </p>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Increased Visibility
+                  </p>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Customizable Layouts
+                  </p>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Start up friendly
+                  </p>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Customer Engagement
+                  </p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper text-slider2 kenwheeler">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    More Entertainment
+                  </p>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Flexible Content
+                  </p>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Screen Monetization
+                  </p>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Versatile Creative
+                  </p>
+                </span>
+              </div>
+              <!-- duplicates -->
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    More Entertainment
+                  </p>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Flexible Content
+                  </p>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Screen Monetization
+                  </p>
+                </span>
+              </div>
+              <div class="swiper-slide">
+                <span>
+                  <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.84">
+                      <path d="M14.3128 18.4207V6.45581M14.3128 6.45581L20.0559 12.1989M14.3128 6.45581L8.56964 12.1989"
+                        stroke="#66FF00" stroke-width="1.43578" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </svg>
+
+                  <p>
+                    Versatile Creative
+                  </p>
+                </span>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- 
+          <marquee behavior="scroll" direction="left">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Total Control
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Increased Visibility
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customizable Layouts
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Start up friendly
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customer Engagement
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Total Control
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Increased Visibility
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customizable Layouts
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Start up friendly
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customer Engagement
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Total Control
+            </span>
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Increased Visibility
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customizable Layouts
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Start up friendly
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customer Engagement
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Total Control
+            </span>
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Increased Visibility
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customizable Layouts
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Start up friendly
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customer Engagement
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Total Control
+            </span>
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Increased Visibility
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customizable Layouts
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Start up friendly
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customer Engagement
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Total Control
+            </span>
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Increased Visibility
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customizable Layouts
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Start up friendly
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customer Engagement
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Total Control
+            </span>
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Increased Visibility
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customizable Layouts
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Start up friendly
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customer Engagement
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Total Control
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Increased Visibility
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customizable Layouts
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Start up friendly
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Customer Engagement
+            </span>
+          </marquee> -->
+          <!-- <marquee behavior="scroll" direction="right" id="secondMarquee">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              More Entertainment
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Flexible Content
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Screen Monetization
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Versatile Creative
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              More Entertainment
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Flexible Content
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Screen Monetization
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Versatile Creative
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              More Entertainment
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Flexible Content
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Screen Monetization
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Versatile Creative
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              More Entertainment
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Flexible Content
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Screen Monetization
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Versatile Creative
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              More Entertainment
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Flexible Content
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Screen Monetization
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Versatile Creative
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              More Entertainment
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Flexible Content
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Screen Monetization
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Versatile Creative
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              More Entertainment
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Flexible Content
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Screen Monetization
+            </span>
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+                <path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+              </svg>
+              Versatile Creative
+            </span>
+          </marquee> -->
+        </div>
       </div>
-      <div class="section-4-slider">
-        <marquee behavior="scroll" direction="left">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Total Control
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Increased Visibility
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customizable Layouts
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Start up friendly
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customer Engagement
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Total Control
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Increased Visibility
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customizable Layouts
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Start up friendly
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customer Engagement
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Total Control
-          </span>
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Increased Visibility
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customizable Layouts
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Start up friendly
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customer Engagement
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Total Control
-          </span>
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Increased Visibility
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customizable Layouts
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Start up friendly
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customer Engagement
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Total Control
-          </span>
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Increased Visibility
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customizable Layouts
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Start up friendly
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customer Engagement
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Total Control
-          </span>
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Increased Visibility
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customizable Layouts
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Start up friendly
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customer Engagement
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Total Control
-          </span>
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Increased Visibility
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customizable Layouts
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Start up friendly
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customer Engagement
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Total Control
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Increased Visibility
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customizable Layouts
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Start up friendly
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Customer Engagement
-          </span>
-        </marquee>
-        <marquee behavior="scroll" direction="right"  id="secondMarquee">
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            More Entertainment
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Flexible Content
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Screen Monetization
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Versatile Creative
-          </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              More Entertainment
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Flexible Content
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Screen Monetization
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Versatile Creative
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              More Entertainment
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Flexible Content
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Screen Monetization
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Versatile Creative
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              More Entertainment
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Flexible Content
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Screen Monetization
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Versatile Creative
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              More Entertainment
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Flexible Content
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Screen Monetization
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Versatile Creative
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              More Entertainment
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Flexible Content
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Screen Monetization
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              Versatile Creative
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-              More Entertainment
-            </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Flexible Content
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Screen Monetization
-          </span>
-          <span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#66FF00" d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z"/></svg>
-            Versatile Creative
-          </span>
-        </marquee>       
-      </div>
-    </div>
       <!-- End Section 4 -->
-     <!-- ======= Section 5 ======= -->
+      <!-- ======= Section 5 ======= -->
       <div class="section-5">
         <h1>Enhance Your Experience</h1>
         <div class="section-5-card-wrapper">
-          <div class="section-5-card">
-            <img src="https://s3-alpha-sig.figma.com/img/dbd2/8fd0/15421c1e15fd14713a86ca63cb6ac3a0?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kNsET4M9FVtXmM2ljNVi5aMbUJAvrEopeoTPaZLN4SNI01TTQKSmCPr80ZKgLAnnYF7b-0m3Ig2Ai9P6A28rWj3x5jCjrOUjSn~9ktB-PQ31K9OaUM7yUyZeHsFqKy53KynJ7ZqsnBTX4w7F-WiolGN5GFXX3Lojpp~5R7cAAtPZWlEo61T9EQ6qlPoy0mCWGmx9KF1AmdeV-RfbG0i8XfQWAU2BQFGSfeK2gte01vHUZYaRm1IoNnixFqSNncmhKIYpVQ16O8aq0f0P-o5Geqoz~xOse0YuwJ0EtfdnFOYTDvLF0Pxd8hPwLDwfZsZonyCDW6aDEAHQcG9-NL3wWA__"></img>
+          <div class="section-5-card wow fadeInUp" data-wow-delay="0.2s">
+            <img src="assets/image/perfect-bg.png"></img>
             <div class="card-text">
-               <div class="card-title">Perfect for Multi-Location Businesses</div>
-               <div class="card-content">Centralize the management of TVs across multiple sites from a single dashboard, ensuring consistent branding and reducing workload with Over.</div>
+              <div class="card-title">Perfect for Multi-Location Businesses</div>
+              <div class="card-content">Centralize the management of TVs across multiple sites from a single dashboard,
+                ensuring consistent branding and reducing workload with Over.</div>
             </div>
-         </div>
+          </div>
         </div>
         <div class="section-5-card-wrapper">
-          <div class="section-5-card">
-            <img src="https://s3-alpha-sig.figma.com/img/9aa7/c731/a741fe11c276589708de80fcd7338770?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HRW8Xan5-cUgi0UOAg~EaCsUot-HJMLMZ-xdo6-BERRC6vvXjqrKUqgz6LSX4vIvo5ubUHRbiYKyQHnEnQXSHTiCEZkJd4VhYsYHSI47anAumnX9s2zE94x9VGvC5S8IyPtW~J~SY4Ger21BGIjcM-8JfG9YqoXNNi~i8o-4NsW4dpXUx1pQkuWSLZOBm-6LH9ZfU4sqoouynCR5X5TJ0imZyBikR4xKXccqiwLgbXw6XWVWwjF28qIgaHt0EgH0m6fgWAmfd3n0IzgJlHWGN31rSU7gROBcJYSWloIPFGrBd0cH7pcQpn1j8AheNrBnjfKXl7PCuNYHjt0-Otoouw__"></img>
+          <div class="section-5-card wow fadeInUp" data-wow-delay="0.1s">
+            <img src="assets/image/elevate-bg.png"></img>
             <div class="card-text">
-               <div class="card-title">Elevate Customer Entertainment</div>
-               <div class="card-content">Enhance the customer experience with Over’s engaging and diverse content channels.</div>
+              <div class="card-title">Elevate Customer Entertainment</div>
+              <div class="card-content">Enhance the customer experience with Over’s engaging and diverse content
+                channels.</div>
             </div>
-         </div>
+          </div>
         </div>
         <div class="section-5-card-wrapper">
-        
-          <div class="section-5-card">
-            <img src="https://s3-alpha-sig.figma.com/img/9682/1458/1e5b8771653743a00ad3fa1b3acf2107?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PxmV5w~~fD9WrLE3SL6NH7mdgI9NVigYx46VYUVpGpKgn01IcI2WoG9j3B9uVlnRHWGmrW9bQytMYa3FLE9WpcVIcfUHHOQVw8jKN5~OLzAtctWvdJfzWhTCQta9tbrVBWAWDEjl~3eBtxe1Swrnt~82E4rC1N6zk6~K-8G2e4AuW7md7Lf-4DPNbl13REqufT3mAItAOTOGwNPoycSHkgyISbJdbRxxGjdpgDNzTE70LYyN1JE3fduYfwTwxFZJdnWwU1e3KVCKVIMh4QsH7p2E0Yuq4i0VMAJsetxVsKPpDxCd~AVQuc7WkTzuS2EPoYFPZmFhxOB9a5EC5jktfw__"></img>
+
+          <div class="section-5-card wow fadeInUp" data-wow-delay="0.4s">
+            <img src="assets/image/roi-bg.png"></img>
             <div class="card-text">
               <div class="card-title">150%</div>
               <div class="card-content">ROI within the first year of using Over’s services.</div>
@@ -568,9 +1065,9 @@
           </div>
         </div>
         <div class="section-5-card-wrapper">
-        
-          <div class="section-5-card">
-            <img src="https://s3-alpha-sig.figma.com/img/4461/2073/09d517d9a4fce06d8254be95210c43e7?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ODUzeREzClN0dQerKl2mUbFblRiSso9ieyMqMPiStTlqCpfCiQFgdOkdozQz-ZXwTPApJOti4RPZSeBwHzSzrM7ptN-ufhPt3eAlt1YmK8BN3NuwaA~HuW7O75fGXrYxk0m985EszYlGtLo4VhEqXXRweJL1WarL659fNkcIQVkIy9zG7jYIu0Ks7fb~-U3NXTNlLOppRZ3eLKr3gS8wk65Tir39Mh655omdANtc935BkXnS9fD1J-9aSFn~0eYcgUBcrDXhG9ZX50NzddyF2~0TL~34a63RPV4Kt6CqJCTiwd1tD1SPaZAln~QyzkhvMOhlcc2FZi9Jn0mZYHB7UA__"></img>
+
+          <div class="section-5-card wow fadeInUp" data-wow-delay="0.5s">
+            <img src="assets/image/renowal-bg.png"></img>
             <div class="card-text">
               <div class="card-title">99%</div>
               <div class="card-content">Renowal Rate.</div>
@@ -579,54 +1076,64 @@
         </div>
       </div>
       <!-- End Section 5 -->
-     <!-- ======= Section 6 ======= -->
+      <!-- ======= Section 6 ======= -->
       <div class="section-6">
         <div class="section-6-left">
-          <button class="scale">Scale And Elevate Process</button>
-          <h1>TV reimagined for business</h1>
-          <p>Over® offers a comprehensive suite of short-form, audio-optional channels designed for various business settings.</p>
-          <p>Our specialized Over Player provides access to an extensive library of entertainment, ranging from the latest news and sports updates to engaging viral videos and interactive trivia.</p>
-          <p>With over 50 channels, Over® ensures your business has a constant stream of captivating content.</p>
+          <button class="scale wow fadeInUp">Scale And Elevate Process</button>
+          <h1 class="wow fadeInUp">TV reimagined for business</h1>
+          <p class="wow fadeInUp">Over® offers a comprehensive suite of short-form, audio-optional channels designed for
+            various business
+            settings.</p>
+          <p class="wow fadeInUp">Our specialized Over Player provides access to an extensive library of entertainment,
+            ranging from the
+            latest news and sports updates to engaging viral videos and interactive trivia.</p>
+          <p class="wow fadeInUp">With over 50 channels, Over® ensures your business has a constant stream of
+            captivating content.</p>
         </div>
         <div class="section-6-right">
-          <div class="section-6-right-card">
+          <div class="section-6-right-card wow fadeInUp" data-wow-delay="0.1s">
             <h2>Viral Videos for Your Business</h2>
-            <p>Keep your customers entertained with the most addictive social media videos, tailored specifically for your business.</p>
+            <p>Keep your customers entertained with the most addictive social media videos, tailored specifically for
+              your business.</p>
           </div>
-          <div class="section-6-right-card">
+          <div class="section-6-right-card wow fadeInUp" data-wow-delay="0.2s">
             <h2>Custom Schedules Made Easy</h2>
-            <p>Manage your screen content with ease, setting schedules that entertain all day without needing to be physically present.</p>
+            <p>Manage your screen content with ease, setting schedules that entertain all day without needing to be
+              physically present.</p>
           </div>
-          <div class="section-6-right-card">
+          <div class="section-6-right-card wow fadeInUp" data-wow-delay="0.3s">
             <h2>Effective In-Venue Advertising</h2>
-            <p>Increase your business earnings by playing free, targeted ads in between engaging content on your screens.</p>
+            <p>Increase your business earnings by playing free, targeted ads in between engaging content on your
+              screens.</p>
           </div>
         </div>
       </div>
       <!-- End Section 6 -->
-     <!-- ======= Section 7 ======= -->
+      <!-- ======= Section 7 ======= -->
       <div class="section-7">
-        <h1>Engage and earn more, only with Over.</h1>
+        <h1 class="wow fadeInUp">Engage and earn more, only with Over.</h1>
         <div class="section-7-card-group">
-          <div class="section-7-card">
+          <div class="section-7-card wow fadeInUp" data-wow-delay="0.1s">
             <div class="section-7-card-header">
-              <h3>“Over has transformed how we communicate with our customers. The digital signage is dynamic and catches everyone's attention. Their support team is top-notch”</h3>
+              <h3>“Over has transformed how we communicate with our customers. The digital signage is dynamic and
+                catches everyone's attention. Their support team is top-notch”</h3>
             </div>
             <div class="section-7-card-content">
               <p>Mike, Manager, Sunset Grill</p>
               <h6>Read the case study →</h6>
             </div>
           </div>
-          <div class="section-7-card">
-            <img src="https://s3-alpha-sig.figma.com/img/7d49/ab60/916960bf741b882ee1182708b7aa863e?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pLlBt6bYTLbL~mPVd~vZrtQNjDEop6ZCj~sOuKfJMVzXt6n83KoTBMTGDHKEcrWaUCGGxkl23pz1dSj2Kqwfa-Ds1yOzMbuU1nB2FrwVushfr5ehzjPy-0w2YKPqxX6~bfJzhh73SJmZYaRoXubJ-pYPb4jvsLuLC2q8PVJF0C-CErLDCLhnHOtsIeXkuZwZMnkQvPPNXTRHnlN-4mf0oVAudPpb86uzwlik4u2bORvJYiqthBl1F3GROZ2hn04XELDU4keGhF55QFNKEmdGZ1HNNcC46XqqqaXMe04A~BQgim5luIbYFiUEThQPnNghqv2SYoMpWINbF1PBM61mvQ__" width="50%" height="90px"/>
+          <div class="section-7-card wow fadeInUp" data-wow-delay="0.2s">
+            <img src="assets/image/trader-logo.svg" width="50%" height="90px" />
             <h1>27%</h1>
             <p>revenue increase year over year</p>
             <h3>+3.000</h3>
             <p>transactions per month</p>
           </div>
-          <div class="section-7-card">
+          <div class="section-7-card wow fadeInUp" data-wow-delay="0.3s">
             <div class="section-7-card-header">
-              <h3>“Would I recommend Over? Absolutely! Our customers love the entertaining content Over provides. It's a big hit!”</h3>
+              <h3>“Would I recommend Over? Absolutely! Our customers love the entertaining content Over provides. It's a
+                big hit!”</h3>
             </div>
             <div class="section-7-card-content">
               <p>LaToyia Mays, Laya Center</p>
@@ -636,129 +1143,153 @@
         </div>
       </div>
       <!-- End Section 7 -->
-     <!-- ======= Section 8 ======= -->
-      <div class="section-8">
-        <div class="section-8-wrapper">
-          <h1>Questions?</h1>
-          <div class="accordion">
-            <div class="accordion-item">
-              <button id="accordion-button-1" aria-expanded="false">
-                <span class="accordion-title">How do I install the OverTv device?</span>
-                <span class="icon" aria-hidden="true"></span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  Just watch this short video (just over a minute long) for instructions on how to install the device. Installation takes about 2 minutes - plug in the device, turn it on, enter your wifi information, and the device does everything from there.
-                </p>
+      <!-- ======= Section 8 ======= -->
+      <div class="flip-on-mobile">
+        <div class="section-8">
+          <div class="section-8-wrapper wow fadeInUp">
+            <h1>Questions?</h1>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+
+                  <span class="accordion-title">How do I install the OverTv device?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Installing the OverTv device is simple and quick. Plug in the device, connect it to your Wi-Fi, and
+                    follow the on-screen instructions. The entire process takes less than 5 minutes.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <button id="accordion-button-2" aria-expanded="false">
-                <span class="accordion-title">Why is OverTv free for businesses?</span>
-                <span class="icon" aria-hidden="true"></span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  Just watch this short video (just over a minute long) for instructions on how to install the device. Installation takes about 2 minutes - plug in the device, turn it on, enter your wifi information, and the device does everything from there.
-                </p>
+              <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false">
+
+
+                  <span class="accordion-title"> Why is OverTv free for businesses?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    OverTv provides high-quality content for free by incorporating advertisements into the programming.
+                    This model allows us to offer a no-cost service while still delivering engaging entertainment to
+                    your customers.
+
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <button id="accordion-button-3" aria-expanded="false">
-                <span class="accordion-title">Can I use my own streaming device with OverTv?</span>
-                <span class="icon" aria-hidden="true"></span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  OverTv curates a diverse range of content, including viral clips, scenic drone footage, and interactive trivia. We ensure there's something for everyone, keeping your audience entertained.
-                </p>
+              <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false">
+
+                  <span class="accordion-title">Can I use my own streaming device with OverTv?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    No, we provide a custom streaming device to ensure the best performance and support. Our device is
+                    optimized for OverTv content, using less bandwidth and offering seamless integration with our
+                    services.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <button id="accordion-button-4" aria-expanded="false">
-                <span class="accordion-title">How can I promote my events and special offers with OverTv?</span>
-                <span class="icon" aria-hidden="true"></span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  OverTv curates a diverse range of content, including viral clips, scenic drone footage, and interactive trivia. We ensure there's something for everyone, keeping your audience entertained.
-                </p>
+              <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false">
+
+                  <span class="accordion-title">How can I promote my events and special offers with OverTv?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    OverTv Ads allows you to create and schedule custom ads that are displayed during commercial breaks.
+                    This ensures your promotions reach customers effectively and at the right time.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <button id="accordion-button-5" aria-expanded="false">
-                <span class="accordion-title">What type of content does OverTv offer?</span>
-                <span class="icon" aria-hidden="true"></span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
-                  Ut tortor pretium viverra suspendisse potenti.
-                </p>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+
+
+                  <span class="accordion-title">What type of content does OverTv offer?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    OverTv curates a diverse range of content, including viral clips, scenic drone footage, and
+                    interactive trivia. We ensure there's something for everyone, keeping your audience entertained.
+
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
-        
-      </div>
-      <!-- End Section 8 -->
-     <!-- ======= Section 9 ======= -->
-      <div class="section-9">
-        <div class="section-9-left">
-          <img src="https://s3-alpha-sig.figma.com/img/ce3b/dba7/3b8823248a2aefd7396a2d44ba9784f2?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QI9oZ9PxeOjuFc0uqCfJNBFjyEiwamDqGEotFY30clbuUAtQBUGxJ-FtrQ6tDuRyk8WN0ZHXVx888scNW~pz~iRU8sFpRtiXSz0B1iRGYlU-fUijd6MKmjmpdEDuyxhxuiQIW71Qx3qfleX8ZFbYETO0QyzmowaDvVysp8e3xNeg0Ck6wlpqhEtGy3gkRKgFrOr9j1W4sd5bdFc0~-HGVFxjm-9e~lEs4VUkBKXGFvYV2uOBv61H667WPwWrPqK1R3~rx81Fj73I3Rl9cdfkMlvApC0CmlJ1bnpHveUIcB6AaeAxJZnWVv-dWTMBZO75scLCsk3PFq6sPinGnjkm5Q__" />
-        </div>
-        <div class="section-9-right">
-          <form action="send_email.php" method="post" id="contact-form">
-            <div class="d-inline">
-              <p>Business Type</p>
-              <input id="business_type" name="business_type"/>
-            </div>
-            <div class="d-inline">
-              <p>Full Name</p>
-              <input type="text" id="full_name" name="full_name" required/>
-            </div>
-            <div class="d-flex">
-            <div class="d-inline">
-              <p>Email Address</p>
-              <input type="email" id="email_address" name="email_address" required/>
-            </div>
-            <div class="d-inline">
-              <p>Phone Number</p>
-              <input type="tel" placeholder="+1 012 3456 789" id="phone_number" name="phone_number" required/>
-            </div>
-            </div>
-            <div class="d-flex">
+        <!-- End Section 8 -->
+        <!-- ======= Section 9 ======= -->
+        <div class="section-9">
+          <div class="section-9-left wow fadeIn">
+            <img src="assets/image/contact-img.png" />
+          </div>
+          <div class="section-9-right wow fadeInUp">
+            <form action="send_email.php" method="post" id="contact-form">
               <div class="d-inline">
-              <p>Business Name</p>
-              <input id="business_name" name="business_name"/>
+                <p>Business Type</p>
+                <!-- <input id="business_type" name="business_type" /> -->
+                <select id="business_type" name="business_type">
+                  <option value="">Select one</option>
+                  <option value="advertiser">Advertiser</option>
+                  <option value="venue">Venue</option>
+                </select>
               </div>
               <div class="d-inline">
-              <p>Business Address</p>
-              <input id="business_address" name="business_address"/>
+                <p>Full Name</p>
+                <input placeholder="Name" type="text" id="full_name" name="full_name" required />
               </div>
-            </div>
-            <div class="d-inline">
+              <div class="d-flex" style="margin-top: 0 !important;">
+                <div class="d-inline">
+                  <p>Email Address</p>
+                  <input placeholder="Email" type="email" id="email_address" name="email_address" required />
+                </div>
+                <div class="d-inline">
+                  <p>Phone Number</p>
+                  <input type="tel" placeholder="Phone" id="phone_number" name="phone_number" required />
+                </div>
+              </div>
+
+              <div class="d-inline">
+                <p>Business Name</p>
+                <input placeholder="Business name" id="business_name" name="business_name" />
+              </div>
+              <div class="d-inline">
+                <p>Business Address</p>
+                <input placeholder="Business Address" id="business_address" name="business_address" />
+              </div>
+
+              <!-- <div class="d-inline">
               <p>Message</p>
-              <input placeholder="Write your message.." id="message" name="message"/>
-            </div>
-            <div class="d-flex">
-              <div>
-                <span class="msg-error error"></span>
-                <div id="recaptcha" class="g-recaptcha" data-sitekey="6LfFd_UpAAAAABVH5uHvlCdGlYPH2tsR_WydG4P0" data-callback="aaa"></div>
+              <input placeholder="Write your message.." id="message" name="message" />
+            </div> -->
+              <div class="d-flex">
+                <div>
+                  <span class="msg-error error"></span>
+                  <div id="recaptcha" class="g-recaptcha" data-sitekey="6LfFd_UpAAAAABVH5uHvlCdGlYPH2tsR_WydG4P0"
+                    data-callback="aaa"></div>
+                </div>
+                <button type="submit">Send Message</button>
               </div>
-              <button type="submit">Send Message</button>
-            </div>
-        </form>
+            </form>
+          </div>
         </div>
       </div>
       <!-- End Section 9 -->
-     <!-- ======= Section 9 ======= -->
+      <!-- ======= Section 9 ======= -->
       <div class="section-10" id="contact">
         <div class="section-10-header">
           <div class="section-10-header-title">
             <div class="d-flex">
-              <h4>Connect with us and let's make your </h4><h4> business thrive.</h4>
+              <h4>Connect with us and take your  </h4>
+
+              <h4 class="foot-gredient-text"> business to the next level.</h4>
             </div>
             <p>We’re here to help, let’s connect.</p>
           </div>
@@ -787,20 +1318,23 @@
           </div>
           <div class="container">
             <div class="faq-drawer">
-              <input class="faq-drawer__trigger" id="faq-drawer" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer">Explore</label>
+              <input class="faq-drawer__trigger" id="faq-drawer" type="checkbox" /><label class="faq-drawer__title"
+                for="faq-drawer">Explore</label>
               <div class="faq-drawer__content-wrapper">
                 <div class="faq-drawer__content">
                   <p><a href="#header" onclick="event.preventDefault(); scrollToTarget('header');">Home</a></p>
                   <p><a href="#header" onclick="event.preventDefault(); scrollToTarget('header');">About Us</a></p>
-                  <p><a href="#section-2" onclick="event.preventDefault(); scrollToTarget('section-2');">Our Services</a></p>
+                  <p><a href="#section-2" onclick="event.preventDefault(); scrollToTarget('section-2');">Our
+                      Services</a></p>
                   <p><a href="#section-4" onclick="event.preventDefault(); scrollToTarget('section-4');">Blog</a></p>
                   <p><a href="#contact" onclick="event.preventDefault(); scrollToTarget('contact');">Contacts</a></p>
                 </div>
               </div>
             </div>
-            
+
             <div class="faq-drawer">
-              <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-2">Social Links</label>
+              <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label class="faq-drawer__title"
+                for="faq-drawer-2">Social Links</label>
               <div class="faq-drawer__content-wrapper">
                 <div class="faq-drawer__content">
                   <p>Twitter</p>
@@ -810,9 +1344,10 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="faq-drawer">
-              <input class="faq-drawer__trigger" id="faq-drawer-3" type="checkbox" /><label class="faq-drawer__title" for="faq-drawer-3">Legal</label>
+              <input class="faq-drawer__trigger" id="faq-drawer-3" type="checkbox" /><label class="faq-drawer__title"
+                for="faq-drawer-3">Legal</label>
               <div class="faq-drawer__content-wrapper">
                 <div class="faq-drawer__content">
                   <p>Privacy Policy</p>
@@ -820,67 +1355,161 @@
                 </div>
               </div>
             </div>
-            
+
           </div>
         </div>
         <div class="section-10-footer">
           <svg xmlns="http://www.w3.org/2000/svg" width="116" height="23" viewBox="0 0 116 23" fill="none">
-            <path d="M30.2305 0.463379H37.7533C38.6626 5.50485 39.5719 10.5664 40.485 15.6239C41.2339 10.5102 44.5349 6.92064 46.9304 2.85778C47.7519 1.46606 49.1273 0.659905 50.6861 0.547604C52.4283 0.419261 54.1858 0.519529 56.1037 0.519529C55.6835 1.21739 55.3167 1.85109 54.927 2.46473C51.2936 8.15995 47.6602 13.8552 44.0229 19.5424C42.4679 21.9769 38.4563 23.0116 36.0111 21.5477C35.545 21.267 35.0483 20.7135 34.9184 20.1921C33.3252 13.6586 31.7969 7.10914 30.2305 0.463379Z" fill="white" style="fill:white;fill-opacity:1;"/>
-            <path d="M20.4618 13.8632C20.6375 12.0062 20.8285 10.2736 20.9546 8.53697C21.0463 7.32172 20.4618 6.62386 19.2888 6.6038C15.1205 6.51958 10.9484 6.45541 6.77627 6.40327C4.93091 6.3792 3.08172 6.40327 1.24018 6.40327C1.05679 2.69736 3.09319 0.282911 6.51647 0.254836C11.9609 0.206708 17.4053 0.214729 22.8496 0.254836C25.8603 0.278901 27.5758 2.17998 27.4459 5.31636C27.3809 6.88054 27.2434 8.45275 26.9874 9.99687C26.5671 12.5357 25.7724 13.3137 23.354 13.6827C22.3797 13.8311 21.3825 13.8151 20.4541 13.8712L20.4618 13.8632Z" fill="white" style="fill:white;fill-opacity:1;"/>
-            <path d="M7.0351 8.16026C6.84025 9.80064 6.58809 11.2445 6.51168 12.7004C6.3856 15.0667 6.76384 15.5199 8.98362 15.548C13.5607 15.6082 18.1417 15.5881 22.7188 15.5961C23.8879 15.5961 25.057 15.5961 26.2261 15.5961C26.2681 19.6831 24.2929 21.8168 20.5372 21.8168C15.2762 21.8208 10.0152 21.8248 4.75037 21.8168C1.57161 21.8127 -0.14003 19.9879 0.00897487 16.6469C0.0853874 14.9424 0.253495 13.2258 0.547683 11.5493C0.891539 9.59209 1.904 8.68165 3.77229 8.42898C4.83442 8.28459 5.91184 8.24449 7.02746 8.15625L7.0351 8.16026Z" fill="white" style="fill:white;fill-opacity:1;"/>
-            <path d="M96.7939 0.539509C96.4538 2.27615 96.1138 3.99274 95.7394 5.89783C94.8912 5.89783 94.0392 5.8858 93.191 5.89783C89.9129 5.94997 88.2089 7.22538 87.3951 10.5663C86.566 13.9714 85.9509 17.4367 85.183 20.8618C85.0989 21.2308 84.629 21.7682 84.3272 21.7803C82.1112 21.8605 79.8952 21.8244 77.5188 21.8244C78.1377 18.7241 78.7223 15.7602 79.3221 12.8003C79.624 11.3123 79.9182 9.82432 80.2735 8.34838C81.5037 3.24273 83.5974 1.14513 88.5795 0.595659C91.2578 0.298866 93.9933 0.54352 96.7939 0.54352V0.539509Z" fill="white" style="fill:white;fill-opacity:1;"/>
-            <path d="M96.1287 13.6347H92.7168C92.5449 11.1762 92.6977 10.9957 94.8411 10.9957C98.826 10.9957 102.811 10.9957 106.949 10.9957C107.289 13.4944 107.621 15.9449 107.954 18.3955C108.057 18.4155 108.16 18.4396 108.267 18.4596C109.1 16.9075 110.047 15.4075 110.743 13.7872C111.74 11.481 113.318 10.5946 115.797 11.124C115.48 11.6976 115.186 12.2591 114.865 12.8005C113.432 15.227 112.076 17.7056 110.513 20.0359C109.971 20.842 108.997 21.584 108.095 21.8206C106.349 22.2778 105.604 21.6201 105.237 19.7591C104.725 17.1602 104.255 14.5532 103.686 11.5412C103.407 12.4676 103.246 13.0011 103.044 13.6708H97.3436C99.2081 14.8741 99.2157 14.8741 98.7687 17.0719C98.4478 18.6441 98.1039 20.2083 97.7639 21.7885H94.5202C95.0474 19.1174 95.5632 16.5024 96.1287 13.6388V13.6347Z" fill="white" style="fill:white;fill-opacity:1;"/>
-            <path d="M59.5964 13.6025C62.1562 15.3191 64.7848 16.2696 67.528 16.4421C70.6876 16.4421 73.4003 16.3739 76.3345 16.3739C76.5103 19.6587 74.7184 21.8004 71.7651 21.8285C68.1393 21.8646 64.5135 21.8966 60.8877 21.7924C56.3297 21.66 54.3124 19.2817 54.5417 14.5089C54.5722 13.8431 54.5761 13.1613 54.7327 12.5236C55.3325 10.045 55.8521 7.53426 56.6583 5.12783C57.537 2.50482 59.4741 0.764171 62.1065 0.587699C65.8851 0.335024 69.7134 0.218713 73.4767 0.575667C76.8885 0.900535 78.2487 2.95803 78.0767 6.55966C78.0118 7.96341 77.7252 9.38722 77.3355 10.7388C76.7739 12.684 75.4481 13.6346 73.45 13.6105C69.3275 13.5664 65.2012 13.5985 61.0788 13.5985C60.6509 13.5985 60.2268 13.5985 59.6002 13.5985L59.5964 13.6025ZM63.4514 8.64523C65.3884 8.64523 67.2873 8.72144 69.1708 8.58908C69.6217 8.557 70.2139 7.89122 70.3896 7.38186C70.5042 7.05298 70.0878 6.21875 69.7287 6.06233C68.0858 5.3404 66.3627 5.32035 64.7313 6.10645C63.8143 6.55164 63.3864 7.44202 63.4514 8.64924V8.64523Z" fill="white" style="fill:white;fill-opacity:1;"/>
+            <path
+              d="M30.2305 0.463379H37.7533C38.6626 5.50485 39.5719 10.5664 40.485 15.6239C41.2339 10.5102 44.5349 6.92064 46.9304 2.85778C47.7519 1.46606 49.1273 0.659905 50.6861 0.547604C52.4283 0.419261 54.1858 0.519529 56.1037 0.519529C55.6835 1.21739 55.3167 1.85109 54.927 2.46473C51.2936 8.15995 47.6602 13.8552 44.0229 19.5424C42.4679 21.9769 38.4563 23.0116 36.0111 21.5477C35.545 21.267 35.0483 20.7135 34.9184 20.1921C33.3252 13.6586 31.7969 7.10914 30.2305 0.463379Z"
+              fill="white" style="fill:white;fill-opacity:1;" />
+            <path
+              d="M20.4618 13.8632C20.6375 12.0062 20.8285 10.2736 20.9546 8.53697C21.0463 7.32172 20.4618 6.62386 19.2888 6.6038C15.1205 6.51958 10.9484 6.45541 6.77627 6.40327C4.93091 6.3792 3.08172 6.40327 1.24018 6.40327C1.05679 2.69736 3.09319 0.282911 6.51647 0.254836C11.9609 0.206708 17.4053 0.214729 22.8496 0.254836C25.8603 0.278901 27.5758 2.17998 27.4459 5.31636C27.3809 6.88054 27.2434 8.45275 26.9874 9.99687C26.5671 12.5357 25.7724 13.3137 23.354 13.6827C22.3797 13.8311 21.3825 13.8151 20.4541 13.8712L20.4618 13.8632Z"
+              fill="white" style="fill:white;fill-opacity:1;" />
+            <path
+              d="M7.0351 8.16026C6.84025 9.80064 6.58809 11.2445 6.51168 12.7004C6.3856 15.0667 6.76384 15.5199 8.98362 15.548C13.5607 15.6082 18.1417 15.5881 22.7188 15.5961C23.8879 15.5961 25.057 15.5961 26.2261 15.5961C26.2681 19.6831 24.2929 21.8168 20.5372 21.8168C15.2762 21.8208 10.0152 21.8248 4.75037 21.8168C1.57161 21.8127 -0.14003 19.9879 0.00897487 16.6469C0.0853874 14.9424 0.253495 13.2258 0.547683 11.5493C0.891539 9.59209 1.904 8.68165 3.77229 8.42898C4.83442 8.28459 5.91184 8.24449 7.02746 8.15625L7.0351 8.16026Z"
+              fill="white" style="fill:white;fill-opacity:1;" />
+            <path
+              d="M96.7939 0.539509C96.4538 2.27615 96.1138 3.99274 95.7394 5.89783C94.8912 5.89783 94.0392 5.8858 93.191 5.89783C89.9129 5.94997 88.2089 7.22538 87.3951 10.5663C86.566 13.9714 85.9509 17.4367 85.183 20.8618C85.0989 21.2308 84.629 21.7682 84.3272 21.7803C82.1112 21.8605 79.8952 21.8244 77.5188 21.8244C78.1377 18.7241 78.7223 15.7602 79.3221 12.8003C79.624 11.3123 79.9182 9.82432 80.2735 8.34838C81.5037 3.24273 83.5974 1.14513 88.5795 0.595659C91.2578 0.298866 93.9933 0.54352 96.7939 0.54352V0.539509Z"
+              fill="white" style="fill:white;fill-opacity:1;" />
+            <path
+              d="M96.1287 13.6347H92.7168C92.5449 11.1762 92.6977 10.9957 94.8411 10.9957C98.826 10.9957 102.811 10.9957 106.949 10.9957C107.289 13.4944 107.621 15.9449 107.954 18.3955C108.057 18.4155 108.16 18.4396 108.267 18.4596C109.1 16.9075 110.047 15.4075 110.743 13.7872C111.74 11.481 113.318 10.5946 115.797 11.124C115.48 11.6976 115.186 12.2591 114.865 12.8005C113.432 15.227 112.076 17.7056 110.513 20.0359C109.971 20.842 108.997 21.584 108.095 21.8206C106.349 22.2778 105.604 21.6201 105.237 19.7591C104.725 17.1602 104.255 14.5532 103.686 11.5412C103.407 12.4676 103.246 13.0011 103.044 13.6708H97.3436C99.2081 14.8741 99.2157 14.8741 98.7687 17.0719C98.4478 18.6441 98.1039 20.2083 97.7639 21.7885H94.5202C95.0474 19.1174 95.5632 16.5024 96.1287 13.6388V13.6347Z"
+              fill="white" style="fill:white;fill-opacity:1;" />
+            <path
+              d="M59.5964 13.6025C62.1562 15.3191 64.7848 16.2696 67.528 16.4421C70.6876 16.4421 73.4003 16.3739 76.3345 16.3739C76.5103 19.6587 74.7184 21.8004 71.7651 21.8285C68.1393 21.8646 64.5135 21.8966 60.8877 21.7924C56.3297 21.66 54.3124 19.2817 54.5417 14.5089C54.5722 13.8431 54.5761 13.1613 54.7327 12.5236C55.3325 10.045 55.8521 7.53426 56.6583 5.12783C57.537 2.50482 59.4741 0.764171 62.1065 0.587699C65.8851 0.335024 69.7134 0.218713 73.4767 0.575667C76.8885 0.900535 78.2487 2.95803 78.0767 6.55966C78.0118 7.96341 77.7252 9.38722 77.3355 10.7388C76.7739 12.684 75.4481 13.6346 73.45 13.6105C69.3275 13.5664 65.2012 13.5985 61.0788 13.5985C60.6509 13.5985 60.2268 13.5985 59.6002 13.5985L59.5964 13.6025ZM63.4514 8.64523C65.3884 8.64523 67.2873 8.72144 69.1708 8.58908C69.6217 8.557 70.2139 7.89122 70.3896 7.38186C70.5042 7.05298 70.0878 6.21875 69.7287 6.06233C68.0858 5.3404 66.3627 5.32035 64.7313 6.10645C63.8143 6.55164 63.3864 7.44202 63.4514 8.64924V8.64523Z"
+              fill="white" style="fill:white;fill-opacity:1;" />
           </svg>
           <p>2023 Over TV © All Rights Reserved.</p>
         </div>
       </div>
       <!-- End Section 9 -->
+    </div>
+
   </div>
-    
-</div>
-<script>
-  const items = document.querySelectorAll('.accordion button');
 
-  function toggleAccordion() {
-    const itemToggle = this.getAttribute('aria-expanded');
 
-    for (i = 0; i < items.length; i++) {
-      items[i].setAttribute('aria-expanded', 'false');
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
+
+  <script>
+
+
+    var swiper = new Swiper(".text-slider", {
+      slidesPerView: 4,
+      spaceBetween: 10,
+
+      speed: 3000,
+      autoplay: {
+        delay: 0,
+        // reverseDirection: true,
+      },
+
+      loop: true,
+      equalHeight: true,
+
+
+      allowTouchMove: false,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        2000: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+
+    });
+
+
+    var swiper = new Swiper(".text-slider2", {
+      slidesPerView: 3,
+      spaceBetween: 10,
+
+
+      speed: 3000,
+      autoplay: {
+        delay: 0,
+        reverseDirection: true,
+      },
+
+      loop: true,
+
+
+      allowTouchMove: false,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        2000: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      },
+
+    });
+
+
+
+
+
+
+
+
+    const items = document.querySelectorAll('.accordion button');
+
+    function toggleAccordion() {
+      const itemToggle = this.getAttribute('aria-expanded');
+
+      for (i = 0; i < items.length; i++) {
+        items[i].setAttribute('aria-expanded', 'false');
+      }
+
+      if (itemToggle == 'false') {
+        this.setAttribute('aria-expanded', 'true');
+      }
     }
 
-    if (itemToggle == 'false') {
-      this.setAttribute('aria-expanded', 'true');
-    }
-  }
-
-  items.forEach((item) => item.addEventListener('click', toggleAccordion));
+    items.forEach((item) => item.addEventListener('click', toggleAccordion));
 
   </script>
   <script>
     function scrollToTarget(targetId) {
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   </script>
-<script>
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault(); 
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault();
       var captcha = document.getElementById('recaptcha');
-    var response = grecaptcha.getResponse();
+      var response = grecaptcha.getResponse();
 
-    if (response.length === 0) {
-      var errorMsg = document.querySelector('.msg-error');
-      if (errorMsg) {
-        errorMsg.textContent = "reCAPTCHA is mandatory";
-      }
-      if (!captcha.classList.contains("error")) {
-        captcha.classList.add("error");
-      }
-    } else {
-      var errorMsg = document.querySelector('.msg-error');
+      if (response.length === 0) {
+        var errorMsg = document.querySelector('.msg-error');
+        if (errorMsg) {
+          errorMsg.textContent = "reCAPTCHA is mandatory";
+        }
+        if (!captcha.classList.contains("error")) {
+          captcha.classList.add("error");
+        }
+      } else {
+        var errorMsg = document.querySelector('.msg-error');
         if (errorMsg) {
           errorMsg.textContent = '';
         }
@@ -888,8 +1517,8 @@
           captcha.classList.remove("error");
         }
         alert('reCAPTCHA marked');
-    }
-  });
+      }
+    });
   </script>
 </body>
 
