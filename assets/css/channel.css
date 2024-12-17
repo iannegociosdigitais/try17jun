@@ -42,6 +42,7 @@ body.channel .section-10 .border-shape.shape2{
     left: unset;
     height: 160px;
     right: -7% !important;
+    top: unset;
 }
   .hero-channel {
     height: 574px;
