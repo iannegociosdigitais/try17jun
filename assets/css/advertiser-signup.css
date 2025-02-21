@@ -202,12 +202,16 @@ body {
 .submit-form h2{
     font-size: 22px;
 }
+.already p{
+    font-size: 16px !important;
+}
+
 .signup-form p,a {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 16px ;
+    font-weight: 500;
     letter-spacing: -0.5px;
     text-align: left;
-    /* color: white; */
+    color: #001B30;
 }
 .contact-button {
     font-size:16px ;
@@ -234,7 +238,7 @@ body {
 .form-control {
     display: flex;
     flex-direction: column;
-    margin-top: 0.6rem;
+    margin-top: 5px;
 }
 .form-control-flex {
     display: flex;
@@ -344,7 +348,7 @@ body {
     margin-top: 40px;
 }
 .privacy-policy span,p{
-    font-size: 10.44px !important;
+    font-size: 14px !important;
     margin-top: 10px;
     display: inline;
     margin: 0px 0px;
@@ -545,7 +549,7 @@ input[type="checkbox"] {
         display: flex;
         justify-content: center;
         font-size: 9px;
-        width: 90.59px;
+        width: 102.59px;
         height: 19.84px !important;
     }
     .section-10-content .d-inline {
