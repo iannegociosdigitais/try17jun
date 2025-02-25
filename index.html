@@ -3,16 +3,6 @@
    <head>
       <meta charset="utf-8">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
-      <!-- Google Tag Manager -->
-      <script>(function (w, d, s, l, i) {
-         w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-               new Date().getTime(), event: 'gtm.js'
-         }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-               'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-WL98WF8W');</script>
-      <!-- End Google Tag Manager -->
       <title data-i18n="home_title" >OverTV - More than just a TV</title>
       <link href="assets/image/icon-logo1.png" rel="icon">
       <meta content="" name="description">
@@ -26,17 +16,18 @@
       <link rel="stylesheet" href="assets/css/global.css" />
    </head>
    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
-   <body>
-      <!-- Google Tag Manager (noscript) -->
-      <noscript>
-         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WL98WF8W"
-               height="0" width="0" style="display:none;visibility:hidden"></iframe>
-      </noscript>
-      <!-- End Google Tag Manager (noscript) -->
-      <div id="loader">
-         <div id="progress-bar"></div>
-         <img src="/assets/image/loader-overtv.png" alt="Loading..." />
-     </div>
+   <body class="home-page">
+
+
+      <div class="border-shape shape2"></div>
+      <div class="border-shape shape3"></div>
+      <div class="border-shape shape4"></div>
+      <div class="border-shape shape5"></div>
+
+<!--      <div id="loader">-->
+<!--         <div id="progress-bar"></div>-->
+<!--         <img src="/assets/image/loader-overtv.png" alt="Loading..." />-->
+<!--     </div>-->
       <!-- Header Container -->
       <header id="header">
          <div class="container">
@@ -102,7 +93,7 @@
             </div>
             <div class="log-sign" style="--i: 1.8s">
              <a href="/signup.html" class="btn transparent">
-               <button class="contact-button"><span data-i18n="advertise">Get Your Free Player</span><svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <button class="contact-button"><span data-i18n="advertise">Create Campaign</span><svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                      d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
                      fill="white" />
@@ -116,7 +107,7 @@
          </div>
 
             <div class="hamburger-menu-container mb-head">
-             <a href="/signup.html" class="contact-button mb-button" ><span data-i18n="advertise" style="margin-right: 10px;">Get Your Free Player  </span>
+             <a href="/signup.html" class="contact-button mb-button" ><span data-i18n="advertise" style="margin-right: 10px;">Create Campaign  </span>
             <svg  width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                <path
                   d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
@@ -136,7 +127,7 @@
                   <p data-i18n="transform_business">Transform your business's TV into an exciting experience for your customers and boost your revenue with channels featuring viral entertainment, sports, lifestyle, kids' content, and more.</p>
                   <div class="buttons">
                      <a href="/signup.html" class="btn-primary-lg">
-                        <b data-i18n="get_started_button">Get started</b>
+                        <b data-i18n="get_started_button">Request Free</b>
                        
                         <svg id="start_icon" xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
                            <path d="M10.3878 2.87893L2.05541 9.91049L0.686523 8.75534L9.0179 1.72376H1.67495V0.0898438H12.324V9.07639H10.3878V2.87893Z" fill="white"/>
@@ -162,7 +153,7 @@
                   <div class="border-shape b4 absolute absolute-right-0 shape2 w-cut h-cut skew-x-10 border-top-left-40"></div>
                </div>
                <div class="section-2-title my-2 mt-md-4">
-                  <button class="btn-outline mb-35" data-i18n="about_us_button_home">About us</button>
+                  <button class="btn-outline mb-35" data-i18n="about_us_button_home">Elevate the power of your establishment's TVs</button>
                   <h1 class="wow fadeInUp" data-i18n="make_every_screen_work">Make Every Screen Work for You</h1>
                   <p class="wow fadeInUp" data-i18n="channels_cater">Our channels cater to every taste, from interactive trivia to the latest viral videos, ensuring your customers stay entertained and engaged.</p>
                </div>
@@ -1180,7 +1171,7 @@
                         </h3>
                      </div>
                      <div class="section-7-card-content">
-                        <p data-i18n="venu_customer_author_0"></p>
+                        <p data-i18n="venu_customer_author_0">Edson Sarto, Rizzeto </p>
                         <!-- <h6 data-i18n="venu_customer_name">Laura, Co-Proprietária, The Mountain Grill</h6> -->
                      </div>
                   </div>
@@ -1338,8 +1329,8 @@
                            </span>
                         </button>
                         <ul class="dropdown-menu">
-                        <li><span data-lang="BR">Português</span></li>
-                        <li><span data-lang="EN">English</span></li>
+                        <li><span data-lang="BR" onclick="changeLang(this)">Português</span></li>
+                        <li><span data-lang="EN" onclick="changeLang(this)">English</span></li>
                         <!-- <li><span data-lang="ES">Español</span></li> -->
                         </ul>
                      </div>
@@ -1375,6 +1366,18 @@
       <script src="assets/js/swiper.min.js"></script>
       <script src="assets/js/script.js"></script>
       <script>
+
+function changeLang(element) {
+    const selectedLang = element.getAttribute("data-lang");
+    document.documentElement.setAttribute("lang", selectedLang);
+    localStorage.setItem("selectedLang", selectedLang); // Save for future visits
+}
+
+// Apply stored language on page load
+document.addEventListener("DOMContentLoaded", function () {
+    const savedLang = localStorage.getItem("selectedLang") || "EN";
+    document.documentElement.setAttribute("lang", savedLang);
+});
          var swiper = new Swiper(".text-slider", {
             slidesPerView: 4,
             spaceBetween: 10,
