@@ -3,16 +3,6 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-      <!-- Google Tag Manager -->
-      <script>(function (w, d, s, l, i) {
-         w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-               new Date().getTime(), event: 'gtm.js'
-         }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-               'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-WL98WF8W');</script>
-      <!-- End Google Tag Manager -->
     <title>OverTV - Channel</title>
     <link href="assets/image/icon-logo1.png" rel="icon"/>
     <meta content="" name="description"/>
@@ -36,12 +26,6 @@
         defer
 ></script>
 <body class="channel">
-      <!-- Google Tag Manager (noscript) -->
-      <noscript>
-         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WL98WF8W"
-               height="0" width="0" style="display:none;visibility:hidden"></iframe>
-      </noscript>
-      <!-- End Google Tag Manager (noscript) -->
 <!--<div id="loader">-->
 <!--    <div id="progress-bar"></div>-->
 <!--    <img src="/assets/image/loader-overtv.png" alt="Loading..."/>-->
@@ -113,7 +97,7 @@
             </div>
             <div class="log-sign" style="--i: 1.8s">
                 <a href="/signup.html" class="btn transparent">
-                    <button class="contact-button"><span data-i18n="advertise">Get Your Free Player </span>
+                    <button class="contact-button"><span data-i18n="advertise">Create Campaign </span>
                         <svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                     d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
@@ -128,7 +112,7 @@
         </div>
 
         <div class="hamburger-menu-container mb-head">
-            <a href="/signup.html" class="contact-button mb-button" >  <span data-i18n="advertise" style="margin-right: 10px;">Get Your Free Player </span>
+            <a href="/signup.html" class="contact-button mb-button" >  <span data-i18n="advertise" style="margin-right: 10px;">Create Campaign  </span>
                 <svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                             d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
@@ -155,7 +139,7 @@
                     interactive trivia—curated to keep your guests entertained and immersed in the moment
                 </p>
                 <button data-i18n="hero_get_your_free_player" onclick="redirectToSignup()">
-                    Get Your Free Player
+                    Request Free
                 </button>
             </div>
         </div>
@@ -536,8 +520,8 @@
                               </span>
                            </button>
                            <ul class="dropdown-menu">
-                           <li><span data-lang="BR">Português</span></li>
-                           <li><span data-lang="EN">English</span></li>
+                           <li><span data-lang="BR" onclick="changeLang(this)">Português</span></li>
+                           <li><span data-lang="EN" onclick="changeLang(this)">English</span></li>
                            <!-- <li><span data-lang="ES">Español</span></li> -->
                            </ul>
                         </div>
@@ -581,6 +565,18 @@
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/swiper.min.js"></script>
 <script>
+
+function changeLang(element) {
+    const selectedLang = element.getAttribute("data-lang");
+    document.documentElement.setAttribute("lang", selectedLang);
+    localStorage.setItem("selectedLang", selectedLang); // Save for future visits
+}
+
+// Apply stored language on page load
+document.addEventListener("DOMContentLoaded", function () {
+    const savedLang = localStorage.getItem("selectedLang") || "EN";
+    document.documentElement.setAttribute("lang", savedLang);
+});
     var swiper = new Swiper(".text-slider", {
         slidesPerView: 4,
         spaceBetween: 10,

@@ -3,16 +3,6 @@
    <head>
       <meta charset="utf-8">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
-      <!-- Google Tag Manager -->
-      <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-           'gtm.start':
-              new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-           j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-              'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-     })(window, document, 'script', 'dataLayer', 'GTM-WL98WF8W');</script>
-     <!-- End Google Tag Manager -->
       <title data-i18n="home_title" >OverTV - More than just a TV</title>
       <link href="assets/image/icon-logo1.png" rel="icon">
       <meta content="" name="description">
@@ -30,16 +20,10 @@
    </head>
    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
    <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WL98WF8W"
-              height="0" width="0" style="display:none;visibility:hidden"></iframe>
-     </noscript>
-     <!-- End Google Tag Manager (noscript) -->
-    <div id="loader">
-        <div id="progress-bar"></div>
-        <img src="/assets/image/loader-overtv.png" alt="Loading..." />
-    </div>
+<!--    <div id="loader">-->
+<!--        <div id="progress-bar"></div>-->
+<!--        <img src="/assets/image/loader-overtv.png" alt="Loading..." />-->
+<!--    </div>-->
       <!-- Header Container -->
       <header id="header">
          <div class="container">
@@ -105,7 +89,7 @@
             </div>
             <div class="log-sign" style="--i: 1.8s">
             <a href="/signup.html" class="btn transparent">
-               <button class="contact-button"><span data-i18n="advertise">Get Your Free Player </span><svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <button class="contact-button"><span data-i18n="advertise">Create Campaign  </span><svg width="13" height="11" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                      d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
                      fill="white" />
@@ -119,7 +103,7 @@
          </div>
 
             <div class="hamburger-menu-container mb-head">
-            <a href="/signup.html" class="contact-button mb-button" ><span data-i18n="advertise" style="margin-right: 10px;">Get Your Free Player </span>
+            <a href="/signup.html" class="contact-button mb-button" ><span data-i18n="advertise" style="margin-right: 10px;">Create Campaign </span>
             <svg width="13" height="11"  style="margin-top: -2px;" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                <path
                   d="M12.2421 4.18234L2.2943 12.5771L0.660034 11.198L10.6066 2.80322H1.84008V0.852539H14.5536V11.5813H12.2421V4.18234Z"
@@ -452,6 +436,7 @@
     <script src="assets/js/swiper.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
+        
         var validEmail = false;
         const ValidarSeUsuarioExiste = async () => {
             $("#msgValidacaoEmail").text("");
@@ -786,10 +771,10 @@
                 Complement: document.getElementById('complement') ? document.getElementById('complement').value : null,
                 Latitude: document.getElementById('latitude') ? document.getElementById('latitude').value : null,
                 Longitude: document.getElementById('longitude') ? document.getElementById('longitude').value : null,
-                // NameOnCard: document.getElementById('name-on-card').value,
-                // CardNumber: document.getElementById('card-number').value,
-                // Expiry: document.getElementById('expiration-date').value,
-                // CVV: document.getElementById('cvv').value
+                NameOnCard: document.getElementById('name-on-card').value,
+                CardNumber: document.getElementById('card-number').value,
+                Expiry: document.getElementById('expiration-date').value,
+                CVV: document.getElementById('cvv').value
             };
     
             try {
