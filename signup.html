@@ -763,8 +763,7 @@
             const formData = {
                 Email: document.getElementById('work-email').value,
                 FirstName: document.getElementById('first-name').value,
-                LastName: document.getElementById('last-name').value,
-                PhoneNumber: document.getElementById('phone').value,
+                PhoneNumber: document.getElementById('phone1').value,
                 CNPJ: document.getElementById('CPF/CNPJ').value,
                 BussinessName: document.getElementById('business-name').value,
                 Website: formattedUrl,
@@ -779,11 +778,7 @@
                 Number: document.getElementById('number') ? parseInt(document.getElementById('number').value, 10) || null: null,
                 Complement: document.getElementById('complement') ? document.getElementById('complement').value : null,
                 Latitude: document.getElementById('latitude') ? document.getElementById('latitude').value : null,
-                Longitude: document.getElementById('longitude') ? document.getElementById('longitude').value : null,
-                NameOnCard: document.getElementById('name-on-card').value,
-                CardNumber: document.getElementById('card-number').value,
-                Expiry: document.getElementById('expiration-date').value,
-                CVV: document.getElementById('cvv').value
+                Longitude: document.getElementById('longitude') ? document.getElementById('longitude').value : null
             };
     
             try {
